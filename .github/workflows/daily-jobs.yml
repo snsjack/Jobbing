@@ -1,0 +1,42 @@
+name: Daily job site
+
+# Runs every day at 06:30 UTC (afternoon in Sydney). Change the cron if you like.
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch: {}          # also lets you run it manually from the Actions tab
+
+permissions:
+  contents: write                # needed so the run can commit the rebuilt page back
+
+concurrency:
+  group: daily-job-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Build the page
+        env:
+          ADZUNA_APP_ID:  ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          JSEARCH_API_KEY: ${{ secrets.JSEARCH_API_KEY }}
+          ORS_API_KEY:    ${{ secrets.ORS_API_KEY }}
+        run: python job_finder.py --no-email
+
+      - name: Commit the updated page & data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html jobs_db.json
+          git diff --staged --quiet || git commit -m "Update listings $(date -u +%F)"
+          git push
