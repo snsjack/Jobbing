@@ -3,7 +3,7 @@ name: Daily job site
 # Runs every day at 06:30 UTC (afternoon in Sydney). Change the cron if you like.
 on:
   schedule:
-    - cron: "30 6 * * *"
+    - cron: "00 9 * * *"
   workflow_dispatch: {}          # also lets you run it manually from the Actions tab
 
 permissions:
