@@ -72,12 +72,55 @@ class Job:
     location: str
     url: str
     description: str
-    posted: str = ""         # ISO date string if known
+    posted: str = ""         # ISO date string if known (employer posting date)
     lat: float | None = None
     lon: float | None = None
     distance_km: float | None = None
     drive_hours: float | None = None
     sponsorship: str = "unknown"   # confirmed | likely | unknown
+    profile_id: str = ""
+    profile_label: str = ""
+
+
+@dataclass
+class Profile:
+    id: str
+    label: str
+    home_city: str
+    home_lat: float
+    home_lon: float
+    radius_km: float
+    use_arbeitnow: bool
+    use_adzuna: bool
+    adzuna_countries: list
+    adzuna_queries: list
+    educator_keywords: list
+    exclude_title_keywords: list
+    sponsorship_keywords: list
+    sponsor_patterns: list = field(default_factory=list)
+
+
+def get_active_profiles():
+    """Build Profile objects for the locations selected in ACTIVE_LOCATIONS."""
+    active = set(getattr(cfg, "ACTIVE_LOCATIONS", []) or [])
+    profiles = []
+    for loc in getattr(cfg, "LOCATIONS", []):
+        if active and loc["id"] not in active:
+            continue
+        p = Profile(
+            id=loc["id"], label=loc["label"], home_city=loc["home_city"],
+            home_lat=loc["home_lat"], home_lon=loc["home_lon"],
+            radius_km=loc["radius_km"], use_arbeitnow=loc.get("use_arbeitnow", False),
+            use_adzuna=loc.get("use_adzuna", True),
+            adzuna_countries=loc.get("adzuna_countries", []),
+            adzuna_queries=loc.get("adzuna_queries", []),
+            educator_keywords=[k.lower() for k in loc["educator_keywords"]],
+            exclude_title_keywords=[k.lower() for k in loc.get("exclude_title_keywords", [])],
+            sponsorship_keywords=loc["sponsorship_keywords"],
+        )
+        p.sponsor_patterns = _compile_sponsor_patterns(p.sponsorship_keywords)
+        profiles.append(p)
+    return profiles
 
 
 # ---------------------------------------------------------------------------
@@ -193,15 +236,13 @@ def _unix_to_iso(ts):
 # ---------------------------------------------------------------------------
 # Source: Adzuna (free tier key, returns coordinates, broad coverage)
 # ---------------------------------------------------------------------------
-def fetch_adzuna():
+def fetch_adzuna(profile):
     jobs = []
     if not (cfg.ADZUNA_APP_ID and cfg.ADZUNA_APP_KEY):
         print("  Adzuna: skipped (no ADZUNA_APP_ID / ADZUNA_APP_KEY set)")
         return jobs
-    # Search terms come from config (ADZUNA_QUERIES) so they're easy to tune.
-    queries = getattr(cfg, "ADZUNA_QUERIES",
-                      ["early childhood", "kindergarten", "preschool"])
-    for country in cfg.ADZUNA_COUNTRIES:
+    queries = profile.adzuna_queries or ["early childhood", "kindergarten", "preschool"]
+    for country in profile.adzuna_countries:
         for q in queries:
             for page in range(1, cfg.ADZUNA_MAX_PAGES + 1):
                 url = f"https://api.adzuna.com/v1/api/jobs/{country}/search/{page}"
@@ -209,8 +250,8 @@ def fetch_adzuna():
                     "app_id": cfg.ADZUNA_APP_ID,
                     "app_key": cfg.ADZUNA_APP_KEY,
                     "what": q,
-                    "where": cfg.HOME_CITY,
-                    "distance": cfg.RADIUS_KM,
+                    "where": profile.home_city,
+                    "distance": profile.radius_km,
                     "results_per_page": 50,
                     "content-type": "application/json",
                 }
@@ -243,7 +284,7 @@ def fetch_adzuna():
                         lon=r.get("longitude"),
                     ))
                 time.sleep(0.4)  # gentle pacing
-    print(f"  Adzuna: pulled {len(jobs)} raw jobs")
+    print(f"  Adzuna [{profile.id}]: pulled {len(jobs)} raw jobs")
     return jobs
 
 
@@ -318,13 +359,13 @@ def fetch_jsearch():
 # ---------------------------------------------------------------------------
 # Filtering / enrichment
 # ---------------------------------------------------------------------------
-def matches_educator(job: Job) -> bool:
+def matches_educator(job: Job, profile) -> bool:
     title = job.title.lower()
-    for bad in cfg.EXCLUDE_TITLE_KEYWORDS:
+    for bad in profile.exclude_title_keywords:
         if bad in title:
             return False
     blob = f"{title} {job.description.lower()}"
-    return any(k in blob for k in cfg.EDUCATOR_KEYWORDS)
+    return any(k in blob for k in profile.educator_keywords)
 
 
 def _compile_sponsor_patterns(terms):
@@ -338,26 +379,23 @@ def _compile_sponsor_patterns(terms):
     return pats
 
 
-_SPONSOR_PATTERNS = _compile_sponsor_patterns(cfg.SPONSORSHIP_KEYWORDS)
-
-
-def classify_sponsorship(job: Job) -> str:
+def classify_sponsorship(job: Job, profile) -> str:
     if job.sponsorship == "confirmed":
         return "confirmed"
     blob = f"{job.title} {job.description}"
-    if any(p.search(blob) for p in _SPONSOR_PATTERNS):
+    if any(p.search(blob) for p in profile.sponsor_patterns):
         return "likely"
     return "unknown"
 
 
-def ors_drive_hours(lat, lon):
+def ors_drive_hours(lat, lon, profile):
     """Real driving time in hours via OpenRouteService, or None on failure."""
     try:
         resp = requests.post(
             "https://api.openrouteservice.org/v2/directions/driving-car",
             headers={"Authorization": cfg.ORS_API_KEY,
                      "Content-Type": "application/json"},
-            json={"coordinates": [[cfg.HOME_LON, cfg.HOME_LAT], [lon, lat]]},
+            json={"coordinates": [[profile.home_lon, profile.home_lat], [lon, lat]]},
             timeout=30,
         )
         resp.raise_for_status()
@@ -368,60 +406,64 @@ def ors_drive_hours(lat, lon):
         return None
 
 
-def add_distance(job: Job) -> bool:
-    """Attach distance + drive estimate; return True if within radius/time."""
+def add_distance(job: Job, profile) -> bool:
+    """Attach distance + drive estimate from this profile's home; return True if
+    within the profile's radius/time."""
     if job.lat is None or job.lon is None:
         coords = geocode(job.location)
         if coords:
             job.lat, job.lon = coords
     if job.lat is None or job.lon is None:
-        # Location couldn't be resolved. Keep it (better to show niche hits),
-        # but mark distance unknown so you can eyeball it.
-        return True
-    job.distance_km = round(haversine_km(cfg.HOME_LAT, cfg.HOME_LON,
+        return True  # keep niche hits even if location couldn't be resolved
+    job.distance_km = round(haversine_km(profile.home_lat, profile.home_lon,
                                          job.lat, job.lon), 1)
     if cfg.DRIVE_TIME_CHECK and cfg.ORS_API_KEY:
-        h = ors_drive_hours(job.lat, job.lon)
+        h = ors_drive_hours(job.lat, job.lon, profile)
         if h is not None:
             job.drive_hours = round(h, 1)
             return h <= cfg.MAX_DRIVE_HOURS
-    # Estimated drive time from straight-line distance
     job.drive_hours = round(job.distance_km * cfg.ROAD_FACTOR / cfg.AVG_KMH, 1)
-    return job.distance_km <= cfg.RADIUS_KM
+    return job.distance_km <= profile.radius_km
 
 
 # ---------------------------------------------------------------------------
 # Pipeline
 # ---------------------------------------------------------------------------
 def collect(include_unknown: bool):
-    raw = []
-    if cfg.USE_ARBEITNOW:
-        raw += fetch_arbeitnow()
-    if cfg.USE_ADZUNA:
-        raw += fetch_adzuna()
-    if getattr(cfg, "USE_JSEARCH", False):
-        raw += fetch_jsearch()
-
-    # de-dupe identical uids and obvious title+company repeats across sources
-    seen_uid, seen_pair, deduped = set(), set(), []
-    for j in raw:
-        pair = (j.title.lower().strip(), j.company.lower().strip())
-        if j.uid in seen_uid or pair in seen_pair:
-            continue
-        seen_uid.add(j.uid)
-        seen_pair.add(pair)
-        deduped.append(j)
-
+    profiles = get_active_profiles()
     kept = []
-    for j in deduped:
-        if not matches_educator(j):
-            continue
-        j.sponsorship = classify_sponsorship(j)
-        if j.sponsorship == "unknown" and not include_unknown:
-            continue
-        if not add_distance(j):
-            continue
-        kept.append(j)
+    for p in profiles:
+        print(f"Location '{p.id}' ({p.label})…")
+        raw = []
+        if p.use_arbeitnow:
+            raw += fetch_arbeitnow()
+        if p.use_adzuna:
+            raw += fetch_adzuna(p)
+        if getattr(cfg, "USE_JSEARCH", False):
+            raw += fetch_jsearch()
+
+        # de-dupe within this location (by uid and title+company)
+        seen_uid, seen_pair, deduped = set(), set(), []
+        for j in raw:
+            pair = (j.title.lower().strip(), j.company.lower().strip())
+            if j.uid in seen_uid or pair in seen_pair:
+                continue
+            seen_uid.add(j.uid); seen_pair.add(pair); deduped.append(j)
+
+        n = 0
+        for j in deduped:
+            if not matches_educator(j, p):
+                continue
+            j.sponsorship = classify_sponsorship(j, p)
+            if j.sponsorship == "unknown" and not include_unknown:
+                continue
+            if not add_distance(j, p):
+                continue
+            j.profile_id = p.id
+            j.profile_label = p.label
+            kept.append(j)
+            n += 1
+        print(f"  -> {n} matches for {p.id}")
 
     rank = {"confirmed": 0, "likely": 1, "unknown": 2}
     kept.sort(key=lambda j: (rank[j.sponsorship],
@@ -500,8 +542,7 @@ def render_html(jobs, title):
             <h1 style="margin:0 0 2px;font:700 22px/1.2 -apple-system,Segoe UI,Roboto,sans-serif;color:#111;">
               {html.escape(title)}</h1>
             <p style="margin:0 0 18px;font:400 14px/1.4 -apple-system,Segoe UI,Roboto,sans-serif;color:#777;">
-              {today} · {len(jobs)} job{'s' if len(jobs)!=1 else ''} ·
-              within {cfg.RADIUS_KM} km of {html.escape(cfg.HOME_CITY)}</p>
+              {today} · {len(jobs)} job{'s' if len(jobs)!=1 else ''} matching your saved locations</p>
             {body}
             <p style="margin:22px 0 0;font:400 12px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;color:#aaa;">
               Sources: Arbeitnow (live visa-sponsorship flag) + Adzuna. "Likely" means a
@@ -543,59 +584,42 @@ _SITE_TEMPLATE = r"""<!DOCTYPE html>
     --slate:#5A6472; --slate-bg:#EDEFF2; --shadow:0 1px 2px rgba(16,25,30,.05);
   }
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
   body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    line-height:1.5;}
-  .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+  .wrap{max-width:880px;margin:0 auto;padding:0 18px}
   header.site{padding:40px 0 18px}
-  .eyebrow{font:600 12px/1 Inter,sans-serif;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--teal);margin:0 0 10px}
-  h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;
-    font-size:clamp(28px,5vw,44px);line-height:1.02;letter-spacing:-.02em;margin:0}
+  .eyebrow{font:600 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+  h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.02;letter-spacing:-.02em;margin:0}
   .sub{color:var(--muted);margin:10px 0 0;font-size:15px}
   .stats{margin:18px 0 0;font-size:14px;color:var(--muted)}
   .stats b{color:var(--ink)}
-  /* sticky filter rail */
-  .bar{position:sticky;top:0;z-index:10;background:rgba(252,252,250,.92);
-    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
-    padding:12px 0;margin-top:18px}
+  .bar{position:sticky;top:0;z-index:10;background:rgba(252,252,250,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 0;margin-top:18px}
   .bar .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   .chips{display:flex;gap:6px;flex-wrap:wrap}
-  .chip{font:600 13px/1 Inter,sans-serif;color:var(--muted);background:transparent;
-    border:1px solid var(--line);border-radius:99px;padding:8px 13px;cursor:pointer;
-    transition:background .12s,color .12s,border-color .12s}
+  .chip{font:600 13px/1 Inter,sans-serif;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:99px;padding:8px 13px;cursor:pointer;transition:background .12s,color .12s,border-color .12s}
   .chip:hover{border-color:var(--teal)}
   .chip[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
-  .grow{flex:1 1 160px;min-width:140px}
-  input[type=search]{width:100%;font:400 14px Inter,sans-serif;color:var(--ink);
-    background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 12px}
-  select{font:500 13px Inter,sans-serif;color:var(--ink);background:#fff;
-    border:1px solid var(--line);border-radius:9px;padding:9px 10px;cursor:pointer}
+  .grow{flex:1 1 150px;min-width:140px}
+  input[type=search]{width:100%;font:400 14px Inter,sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 12px}
+  select{font:500 13px Inter,sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 10px;cursor:pointer}
   :focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:6px}
-  /* date groups + cards */
   main{padding:8px 0 60px}
   .group{margin:26px 0 0}
-  .group h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;
-    font-size:15px;letter-spacing:.01em;color:var(--ink);margin:0 0 12px;
-    display:flex;align-items:baseline;gap:9px}
+  .group h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:15px;color:var(--ink);margin:0 0 12px;display:flex;align-items:baseline;gap:9px}
   .group h2 .n{font:500 12px Inter,sans-serif;color:var(--muted)}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:13px;
-    padding:16px 18px;margin:0 0 11px;box-shadow:var(--shadow)}
-  .pill{display:inline-block;font:600 11px/1 Inter,sans-serif;padding:5px 9px;
-    border-radius:99px;vertical-align:middle}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin:0 0 11px;box-shadow:var(--shadow)}
+  .pill{display:inline-block;font:600 11px/1 Inter,sans-serif;padding:5px 9px;border-radius:99px;vertical-align:middle}
   .pill.confirmed{color:var(--green);background:var(--green-bg)}
   .pill.likely{color:var(--amber);background:var(--amber-bg)}
   .pill.unknown{color:var(--slate);background:var(--slate-bg)}
+  .loc{display:inline-block;font:600 11px/1 Inter,sans-serif;padding:5px 9px;border-radius:99px;color:var(--teal-ink);background:#e3f0f2;margin-left:6px}
   .added{float:right;font:500 12px Inter,sans-serif;color:var(--muted)}
-  .title{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;
-    font-size:18px;line-height:1.25;margin:11px 0 3px}
+  .title{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin:11px 0 3px}
   .org{font-size:14px;color:var(--muted)}
-  .dist{margin-top:5px;font:600 13px Inter,sans-serif;color:var(--teal-ink)}
+  .meta{margin-top:5px;font:600 13px Inter,sans-serif;color:var(--teal-ink)}
+  .meta .posted{color:var(--muted);font-weight:500;margin-left:4px}
   .desc{margin:10px 0 13px;font-size:13px;color:var(--muted);line-height:1.55}
-  .apply{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;
-    font:600 14px Inter,sans-serif;padding:10px 17px;border-radius:9px;
-    transition:transform .1s,background .12s}
+  .apply{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font:600 14px Inter,sans-serif;padding:10px 17px;border-radius:9px;transition:transform .1s,background .12s}
   .apply:hover{background:#000;transform:translateY(-1px)}
   .src{font:400 12px Inter,sans-serif;color:#9aa0a8;margin-left:11px}
   .empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:15px}
@@ -620,39 +644,42 @@ _SITE_TEMPLATE = r"""<!DOCTYPE html>
     <button class="chip" data-days="29">Last 30 days</button>
     <button class="chip" data-days="all" aria-pressed="true">All</button>
   </div>
-  <span class="grow"><input type="search" id="q" placeholder="Search title, employer, suburb…" aria-label="Search listings"></span>
+  <select id="loc" aria-label="Filter by location">__LOCATIONS__</select>
+  <select id="sort" aria-label="Sort by">
+    <option value="added">Newest added</option>
+    <option value="posted">Newest posted</option>
+    <option value="distance">Nearest</option>
+  </select>
   <select id="spons" aria-label="Filter by sponsorship">
     <option value="all">Any sponsorship</option>
     <option value="likely">Likely / confirmed only</option>
   </select>
+  <span class="grow"><input type="search" id="q" placeholder="Search title, employer, suburb…" aria-label="Search listings"></span>
 </div></div>
 
 <main><div class="wrap" id="list"></div></main>
 
 <footer><div class="wrap">
-  Built __BUILD__ · __COUNT__ listings tracked · sources: Adzuna (aggregates employer sites, agencies &amp; smaller boards).
-  "Likely" means a sponsorship/relocation keyword was found in the ad — always confirm in the listing before applying.
+  Built __BUILD__ · __COUNT__ listings tracked.
+  "Likely" = a sponsorship/relocation keyword was found in the ad; "confirmed" = the source flagged it.
+  Always confirm sponsorship in the listing before applying. "Added" = when it first appeared here; "posted" = the employer's date.
 </div></footer>
 
 <script>
 const DATA = __DATA__;
 const BUILD = new Date("__BUILD__T00:00:00");
-const state = {days:"all", q:"", spons:"all"};
-
+const state = {days:"all", loc:"all", spons:"all", sort:"added", q:""};
 const dayMs = 86400000;
-function daysAgo(iso){ return Math.round((BUILD - new Date(iso+"T00:00:00"))/dayMs); }
-function addedLabel(d){ return d<=0?"today":d===1?"yesterday":d+" days ago"; }
-function groupOf(d){
-  if(d<=0) return ["0","Added today"];
-  if(d===1) return ["1","Added yesterday"];
-  if(d<=6) return ["2","Earlier this week"];
-  if(d<=29) return ["3","Earlier this month"];
-  return ["4","Older"];
+function dAgo(iso){ if(!iso) return null; return Math.round((BUILD - new Date(iso+"T00:00:00"))/dayMs); }
+function rel(d){ return d==null?"unknown":d<=0?"today":d===1?"yesterday":d+" days ago"; }
+function bucket(d){
+  if(d==null) return ["9","Date unknown"];
+  if(d<=0) return ["0","today"]; if(d===1) return ["1","yesterday"];
+  if(d<=6) return ["2","this week"]; if(d<=29) return ["3","this month"]; return ["4","older"];
 }
 function distText(j){
   if(j.distance_km==null) return "Distance unknown — check listing";
-  const d = j.drive_hours!=null ? " · ~"+j.drive_hours+" h drive" : "";
-  return Math.round(j.distance_km)+" km"+d;
+  return Math.round(j.distance_km)+" km"+(j.drive_hours!=null?" · ~"+j.drive_hours+" h drive":"");
 }
 const TIER={confirmed:"Sponsorship confirmed",likely:"Sponsorship likely",unknown:"Sponsorship unclear"};
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -660,52 +687,67 @@ const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"
 function render(){
   const max = state.days==="all" ? Infinity : +state.days;
   const q = state.q.trim().toLowerCase();
-  const rows = DATA.filter(j=>{
-    if(daysAgo(j.date_added) > max) return false;
+  let rows = DATA.filter(j=>{
+    const da = dAgo(j.date_added);
+    if(da!=null && da > max) return false;
+    if(state.loc!=="all" && j.profile_id!==state.loc) return false;
     if(state.spons==="likely" && j.sponsorship==="unknown") return false;
-    if(q){ const blob=(j.title+" "+j.company+" "+j.location).toLowerCase(); if(!blob.includes(q)) return false; }
+    if(q){ const b=(j.title+" "+j.company+" "+j.location).toLowerCase(); if(!b.includes(q)) return false; }
     return true;
   });
-  // stats
-  const todayN = DATA.filter(j=>daysAgo(j.date_added)<=0).length;
-  document.getElementById("stats").innerHTML =
-    "<b>"+rows.length+"</b> shown · <b>"+todayN+"</b> added today";
-  // group
-  const order=["0","1","2","3","4"], titles={};
-  const groups={};
-  rows.forEach(j=>{ const [k,t]=groupOf(daysAgo(j.date_added)); (groups[k]=groups[k]||[]).push(j); titles[k]=t; });
+  const todayN = DATA.filter(j=>dAgo(j.date_added)<=0).length;
+  document.getElementById("stats").innerHTML="<b>"+rows.length+"</b> shown · <b>"+todayN+"</b> added today";
+
   const list=document.getElementById("list");
-  if(!rows.length){ list.innerHTML='<p class="empty">No listings match this filter. Try widening the date range or clearing the search — the board refreshes every morning.</p>'; return; }
+  if(!rows.length){ list.innerHTML='<p class="empty">No listings match this filter. Try widening the date range, switching location, or clearing the search — the board refreshes every morning.</p>'; return; }
+
+  // sort + grouping dimension
+  let groups={}, titles={}, order;
+  if(state.sort==="distance"){
+    rows.sort((a,b)=>(a.distance_km==null?1e9:a.distance_km)-(b.distance_km==null?1e9:b.distance_km));
+    groups={"x":rows}; titles={"x":"Nearest first"}; order=["x"];
+  } else {
+    const field = state.sort==="posted" ? "posted" : "date_added";
+    rows.sort((a,b)=>(b[field]||"").localeCompare(a[field]||""));
+    order=["0","1","2","3","4","9"];
+    const verb = state.sort==="posted" ? "Posted " : "Added ";
+    rows.forEach(j=>{ const [k,t]=bucket(dAgo(j[field])); (groups[k]=groups[k]||[]).push(j);
+      titles[k]= t==="Date unknown" ? (state.sort==="posted"?"Posting date unknown":"Date unknown") : verb+t; });
+  }
+
   let html="";
   order.forEach(k=>{
     if(!groups[k]) return;
     html+='<section class="group"><h2>'+esc(titles[k])+' <span class="n">'+groups[k].length+'</span></h2>';
     groups[k].forEach(j=>{
       const tier=j.sponsorship||"unknown";
+      const da=dAgo(j.date_added);
+      const locTag = j.profile_label ? '<span class="loc">'+esc(j.profile_label)+'</span>' : '';
+      const postedTxt = j.posted ? '<span class="posted">· posted '+esc(j.posted)+'</span>' : '<span class="posted">· posting date n/a</span>';
       html+='<article class="card">'+
-        '<span class="pill '+tier+'">'+TIER[tier]+'</span>'+
-        '<span class="added">Added '+addedLabel(daysAgo(j.date_added))+'</span>'+
+        '<span class="pill '+tier+'">'+TIER[tier]+'</span>'+locTag+
+        '<span class="added">Added '+rel(da)+'</span>'+
         '<h3 class="title">'+esc(j.title)+'</h3>'+
         '<div class="org">'+(esc(j.company)||"Employer not listed")+' · '+(esc(j.location)||"—")+'</div>'+
-        '<div class="dist">📍 '+esc(distText(j))+'</div>'+
+        '<div class="meta">📍 '+esc(distText(j))+' '+postedTxt+'</div>'+
         (j.description?'<p class="desc">'+esc(j.description)+'</p>':'<div style="height:8px"></div>')+
         '<a class="apply" href="'+esc(j.url)+'" target="_blank" rel="noopener">Apply</a>'+
-        '<span class="src">'+esc(j.source)+(j.posted?' · posted '+esc(j.posted):'')+'</span>'+
+        '<span class="src">'+esc(j.source)+'</span>'+
       '</article>';
     });
     html+='</section>';
   });
   list.innerHTML=html;
 }
-
 document.getElementById("chips").addEventListener("click",e=>{
   const b=e.target.closest(".chip"); if(!b) return;
-  [...document.querySelectorAll(".chip")].forEach(c=>c.setAttribute("aria-pressed","false"));
-  b.setAttribute("aria-pressed","true");
-  state.days=b.dataset.days; render();
+  document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
+  b.setAttribute("aria-pressed","true"); state.days=b.dataset.days; render();
 });
-document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
+document.getElementById("loc").addEventListener("change",e=>{state.loc=e.target.value;render();});
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
 document.getElementById("spons").addEventListener("change",e=>{state.spons=e.target.value;render();});
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
 render();
 </script>
 </body>
@@ -722,18 +764,20 @@ def update_jobs_db(matches):
     db = load_json(JOBS_DB, {})
     today = dt.date.today().isoformat()
     for j in matches:
+        key = f"{j.profile_id}|{j.uid}"
         fields = dict(
             uid=j.uid, source=j.source, title=j.title, company=j.company,
             location=j.location, url=j.url, description=j.description[:280],
             distance_km=j.distance_km, drive_hours=j.drive_hours,
             sponsorship=j.sponsorship, posted=j.posted, last_seen=today,
+            profile_id=j.profile_id, profile_label=j.profile_label,
         )
-        if j.uid in db:
-            fields["date_added"] = db[j.uid].get("date_added", today)
-            db[j.uid].update(fields)
+        if key in db:
+            fields["date_added"] = db[key].get("date_added", today)
+            db[key].update(fields)
         else:
             fields["date_added"] = today
-            db[j.uid] = fields
+            db[key] = fields
 
     retention = getattr(cfg, "RETENTION_DAYS", 45)
     cutoff = (dt.date.today() - dt.timedelta(days=retention)).isoformat()
@@ -749,11 +793,18 @@ def update_jobs_db(matches):
 def render_site(entries):
     os.makedirs(SITE_DIR, exist_ok=True)
     build_date = dt.date.today().isoformat()
-    radius = getattr(cfg, "RADIUS_KM", "")
-    city = getattr(cfg, "HOME_CITY", "")
     title = getattr(cfg, "SITE_TITLE", "Jobs with sponsorship")
-    subtitle = getattr(cfg, "SITE_SUBTITLE", "").format(radius=radius, city=city)
+    subtitle = getattr(cfg, "SITE_SUBTITLE", "Updated daily")
     data_json = json.dumps(entries, ensure_ascii=False).replace("</", "<\\/")
+
+    # location dropdown options, from the locations present in the data
+    seen, opts = set(), ['<option value="all">All locations</option>']
+    for e in entries:
+        pid = e.get("profile_id", "")
+        if pid and pid not in seen:
+            seen.add(pid)
+            opts.append(f'<option value="{html.escape(pid)}">{html.escape(e.get("profile_label", pid))}</option>')
+    locations_html = "".join(opts)
 
     html_doc = _SITE_TEMPLATE
     for key, val in {
@@ -761,6 +812,7 @@ def render_site(entries):
         "__SUBTITLE__": html.escape(subtitle),
         "__BUILD__": build_date,
         "__COUNT__": str(len(entries)),
+        "__LOCATIONS__": locations_html,
         "__DATA__": data_json,
     }.items():
         html_doc = html_doc.replace(key, val)
