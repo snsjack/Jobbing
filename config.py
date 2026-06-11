@@ -69,7 +69,7 @@ SPONSORSHIP_KEYWORDS = [
 
 # Show jobs whose sponsorship status is UNKNOWN (no keyword)?
 # Default False = only "likely". Override per-run with --include-unknown.
-INCLUDE_UNKNOWN_SPONSORSHIP = False
+INCLUDE_UNKNOWN_SPONSORSHIP = True
 
 # ---------------------------------------------------------------------------
 # 4. DATA SOURCES
