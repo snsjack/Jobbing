@@ -947,6 +947,13 @@ def update_jobs_db(matches):
     date it was first added to the page. Prunes listings not seen recently.
     Returns the listings sorted newest-added first, then nearest."""
     db = load_json(JOBS_DB, {})
+    # Self-heal: keep only entries that use the composite "location|uid" key
+    # AND belong to a location still defined in config. This (a) clears legacy
+    # pre-multi-location duplicates, and (b) removes a location's listings from
+    # the board immediately when you delete it from LOCATIONS.
+    known_ids = {loc["id"] for loc in getattr(cfg, "LOCATIONS", [])}
+    db = {k: v for k, v in db.items()
+          if "|" in k and v.get("profile_id") in known_ids}
     today = dt.date.today().isoformat()
     for j in matches:
         key = f"{j.profile_id}|{j.uid}"
