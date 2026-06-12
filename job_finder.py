@@ -575,133 +575,284 @@ _SITE_TEMPLATE = r"""<!DOCTYPE html>
 <title>__TITLE__</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#FCFCFA; --ink:#16191D; --muted:#5C636E; --line:#E7E7E2;
-    --card:#FFFFFF; --teal:#0E6E7A; --teal-ink:#0A4E58;
-    --green:#0F7A52; --green-bg:#E4F3EC; --amber:#8A6A12; --amber-bg:#FBF1D6;
-    --slate:#5A6472; --slate-bg:#EDEFF2; --shadow:0 1px 2px rgba(16,25,30,.05);
+    --bg:#0A0A0C; --surface:#101013; --surface2:#141418; --raise:#17171C;
+    --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.12);
+    --ink:#F2F3F5; --body:#B9BDC7; --muted:#7E8490; --faint:#555964;
+    --brand:#7C8AFF; --brand-ink:#A9B3FF; --brand-soft:rgba(124,138,255,.12);
+    --ok:#4ADE80; --ok-soft:rgba(74,222,128,.10);
+    --warn:#FBBF24; --warn-soft:rgba(251,191,36,.10);
+    --na:#9CA3AF; --na-soft:rgba(156,163,175,.08);
+    --syd:#FB923C; --lud:#38BDF8;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 8px 24px rgba(0,0,0,.35);
+    --r:10px;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
-  .wrap{max-width:880px;margin:0 auto;padding:0 18px}
-  header.site{padding:40px 0 18px}
-  .eyebrow{font:600 12px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
-  h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(28px,5vw,44px);line-height:1.02;letter-spacing:-.02em;margin:0}
-  .sub{color:var(--muted);margin:10px 0 0;font-size:15px}
-  .stats{margin:18px 0 0;font-size:14px;color:var(--muted)}
-  .stats b{color:var(--ink)}
-  .bar{position:sticky;top:0;z-index:10;background:rgba(252,252,250,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 0;margin-top:18px}
-  .bar .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-  .chips{display:flex;gap:6px;flex-wrap:wrap}
-  .chip{font:600 13px/1 Inter,sans-serif;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:99px;padding:8px 13px;cursor:pointer;transition:background .12s,color .12s,border-color .12s}
-  .chip:hover{border-color:var(--teal)}
-  .chip[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
-  .grow{flex:1 1 150px;min-width:140px}
-  input[type=search]{width:100%;font:400 14px Inter,sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 12px}
-  select{font:500 13px Inter,sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 10px;cursor:pointer}
-  :focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:6px}
-  main{padding:8px 0 60px}
-  .group{margin:26px 0 0}
-  .group h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:15px;color:var(--ink);margin:0 0 12px;display:flex;align-items:baseline;gap:9px}
-  .group h2 .n{font:500 12px Inter,sans-serif;color:var(--muted)}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin:0 0 11px;box-shadow:var(--shadow)}
-  .pill{display:inline-block;font:600 11px/1 Inter,sans-serif;padding:5px 9px;border-radius:99px;vertical-align:middle}
-  .pill.confirmed{color:var(--green);background:var(--green-bg)}
-  .pill.likely{color:var(--amber);background:var(--amber-bg)}
-  .pill.unknown{color:var(--slate);background:var(--slate-bg)}
-  .loc{display:inline-block;font:600 11px/1 Inter,sans-serif;padding:5px 9px;border-radius:99px;color:var(--teal-ink);background:#e3f0f2;margin-left:6px}
-  .added{float:right;font:500 12px Inter,sans-serif;color:var(--muted)}
-  .title{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin:11px 0 3px}
-  .org{font-size:14px;color:var(--muted)}
-  .meta{margin-top:5px;font:600 13px Inter,sans-serif;color:var(--teal-ink)}
-  .meta .posted{color:var(--muted);font-weight:500;margin-left:4px}
-  .desc{margin:10px 0 13px;font-size:13px;color:var(--muted);line-height:1.55}
-  .apply{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font:600 14px Inter,sans-serif;padding:10px 17px;border-radius:9px;transition:transform .1s,background .12s}
-  .apply:hover{background:#000;transform:translateY(-1px)}
-  .src{font:400 12px Inter,sans-serif;color:#9aa0a8;margin-left:11px}
-  .empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:15px}
-  footer{border-top:1px solid var(--line);padding:22px 0 50px;color:#9aa0a8;font-size:12px}
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-  @media (max-width:520px){.added{float:none;display:block;margin-top:6px}}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--body);
+    font:400 14.5px/1.55 Inter,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  ::selection{background:var(--brand);color:#0A0A0C}
+  a{color:var(--brand-ink)}
+
+  /* ===== top nav ===== */
+  nav{border-bottom:1px solid var(--line);background:rgba(10,10,12,.8);
+    backdrop-filter:blur(14px);position:sticky;top:0;z-index:30}
+  nav .wrap{display:flex;align-items:center;gap:14px;height:56px}
+  .mark{display:flex;align-items:center;gap:9px;color:var(--ink);
+    font:600 14.5px Sora,sans-serif;letter-spacing:-.01em;text-decoration:none}
+  .mark .dotlogo{width:22px;height:22px;border-radius:7px;flex:none;
+    background:conic-gradient(from 210deg,var(--syd),var(--brand),var(--lud),var(--syd));
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+  .nav-right{margin-left:auto;display:flex;align-items:center;gap:14px;
+    font:500 12px "IBM Plex Mono",monospace;color:var(--muted)}
+  .live{display:inline-flex;align-items:center;gap:6px}
+  .live::before{content:"";width:6px;height:6px;border-radius:50%;
+    background:var(--ok);box-shadow:0 0 6px var(--ok)}
+
+  /* ===== hero ===== */
+  header.hero{padding:52px 0 8px;
+    background:radial-gradient(620px 220px at 18% 0%,var(--brand-soft),transparent 70%)}
+  h1{font:700 clamp(26px,4vw,38px)/1.12 Sora,sans-serif;letter-spacing:-.025em;
+    color:var(--ink);margin:0;max-width:24ch}
+  .sub{margin:12px 0 0;font-size:15px;color:var(--muted);max-width:58ch}
+  .kpis{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 0;border:1px solid var(--line);
+    border-radius:12px;background:var(--surface);overflow:hidden}
+  .kpi{flex:1 1 130px;padding:14px 18px;border-right:1px solid var(--line)}
+  .kpi:last-child{border-right:0}
+  .kpi b{display:block;font:600 20px/1.2 Sora,sans-serif;letter-spacing:-.02em;color:var(--ink)}
+  .kpi span{font:500 11px "IBM Plex Mono",monospace;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--muted)}
+  .kpi.accent b{color:var(--brand-ink)}
+
+  /* ===== toolbar ===== */
+  .toolbar{position:sticky;top:56px;z-index:20;background:rgba(10,10,12,.85);
+    backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+    padding:12px 0;margin-top:26px}
+  .toolbar .wrap{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+  .tabs{display:inline-flex;background:var(--surface);border:1px solid var(--line);
+    border-radius:9px;padding:3px;gap:2px}
+  .tab{font:500 13px Inter,sans-serif;color:var(--muted);background:transparent;
+    border:0;border-radius:7px;padding:7px 13px;cursor:pointer;
+    transition:color .12s,background .12s}
+  .tab:hover{color:var(--ink)}
+  .tab[aria-selected="true"]{background:var(--raise);color:var(--ink);
+    box-shadow:0 1px 2px rgba(0,0,0,.4)}
+  .tab .ct{font:500 11px "IBM Plex Mono",monospace;color:var(--muted);margin-left:5px}
+  select{font:500 13px Inter,sans-serif;color:var(--body);background:var(--surface);
+    border:1px solid var(--line);border-radius:9px;padding:8px 28px 8px 11px;cursor:pointer;
+    appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+    background-position:calc(100% - 15px) 50%,calc(100% - 10px) 50%;
+    background-size:5px 5px;background-repeat:no-repeat;
+    transition:border-color .12s}
+  select:hover{border-color:var(--line2)}
+  .search{flex:1 1 170px;min-width:150px;position:relative}
+  .search input{width:100%;font:400 13.5px Inter,sans-serif;color:var(--ink);
+    background:var(--surface);border:1px solid var(--line);border-radius:9px;
+    padding:9px 34px 9px 12px;transition:border-color .12s,box-shadow .12s}
+  .search input:hover{border-color:var(--line2)}
+  .search input:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft);outline:0}
+  .search .kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);
+    font:500 11px "IBM Plex Mono",monospace;color:var(--muted);
+    border:1px solid var(--line2);border-radius:5px;padding:2px 6px;pointer-events:none}
+  input::placeholder{color:var(--faint)}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+
+  /* ===== date chips row ===== */
+  .chiprow{padding:11px 0 0}
+  .chiprow .wrap{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .chip{font:500 12px Inter,sans-serif;color:var(--muted);background:transparent;
+    border:1px solid var(--line);border-radius:99px;padding:6px 12px;cursor:pointer;
+    transition:all .12s}
+  .chip:hover{border-color:var(--line2);color:var(--ink)}
+  .chip[aria-pressed="true"]{background:var(--brand-soft);border-color:var(--brand);color:var(--brand-ink)}
+  .hidden-link{margin-left:auto;font:500 12px Inter,sans-serif;color:var(--muted);
+    background:none;border:0;cursor:pointer;text-decoration:underline dotted;padding:6px 0}
+  .hidden-link:hover{color:var(--ink)}
+
+  /* ===== list ===== */
+  main{padding:10px 0 80px}
+  .group{margin:30px 0 0}
+  .group h2{font:600 11px "IBM Plex Mono",monospace;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 10px;
+    display:flex;align-items:center;gap:10px}
+  .group h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .card{position:relative;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--r);padding:16px 18px;margin:0 0 10px;
+    transition:border-color .14s,background .14s,transform .14s;animation:rise .3s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .card:hover{border-color:var(--line2);background:var(--surface2)}
+  .card.applied{opacity:.55}
+  .rowtop{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .badge{display:inline-flex;align-items:center;gap:5px;font:500 11px Inter,sans-serif;
+    padding:4px 9px;border-radius:99px;border:1px solid}
+  .badge.confirmed{color:var(--ok);background:var(--ok-soft);border-color:rgba(74,222,128,.25)}
+  .badge.likely{color:var(--warn);background:var(--warn-soft);border-color:rgba(251,191,36,.25)}
+  .badge.unknown{color:var(--na);background:var(--na-soft);border-color:rgba(156,163,175,.2)}
+  .badge.new{color:var(--brand-ink);background:var(--brand-soft);border-color:rgba(124,138,255,.3)}
+  .locdot{display:inline-flex;align-items:center;gap:6px;font:500 12px Inter,sans-serif;color:var(--muted)}
+  .locdot i{width:7px;height:7px;border-radius:50%;flex:none}
+  .actions{margin-left:auto;display:flex;gap:4px}
+  .icon-btn{width:30px;height:30px;display:grid;place-items:center;border-radius:7px;
+    background:transparent;border:1px solid transparent;color:var(--muted);cursor:pointer;
+    transition:all .12s;font-size:14px;line-height:1}
+  .icon-btn:hover{background:var(--raise);border-color:var(--line);color:var(--ink)}
+  .icon-btn.on{color:var(--warn)}
+  .icon-btn.on-ok{color:var(--ok)}
+  .title{font:600 16.5px/1.35 Sora,sans-serif;letter-spacing:-.012em;color:var(--ink);margin:10px 0 3px}
+  .org{font-size:13.5px;color:var(--muted)}
+  .meta{margin-top:7px;font:500 12px "IBM Plex Mono",monospace;color:var(--body)}
+  .meta .sep{color:var(--faint);margin:0 6px}
+  .desc{margin:10px 0 13px;font-size:13.5px;color:var(--muted);line-height:1.6;max-width:78ch}
+  .cardfoot{display:flex;align-items:center;gap:12px}
+  .apply{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:#0A0A0C;
+    text-decoration:none;font:600 13px Inter,sans-serif;padding:9px 16px;border-radius:8px;
+    transition:transform .1s,box-shadow .12s}
+  .apply:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(242,243,245,.18)}
+  .apply::after{content:"→";font-size:13px}
+  .src{font:400 11px "IBM Plex Mono",monospace;color:var(--faint)}
+  .empty{text-align:center;padding:70px 20px;border:1px dashed var(--line2);border-radius:14px;margin-top:28px}
+  .empty h3{font:600 16px Sora,sans-serif;color:var(--ink);margin:0 0 6px}
+  .empty p{margin:0;color:var(--muted);font-size:13.5px}
+  footer{border-top:1px solid var(--line);padding:26px 0 60px;color:var(--faint);
+    font-size:12px;line-height:1.8}
+  /* toast */
+  #toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,16px);
+    background:var(--raise);border:1px solid var(--line2);color:var(--ink);
+    font:500 13px Inter,sans-serif;padding:10px 16px;border-radius:9px;
+    box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:all .2s;z-index:50}
+  #toast.show{opacity:1;transform:translate(-50%,0)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+  @media (max-width:620px){.kpi{flex-basis:50%;border-bottom:1px solid var(--line)}
+    .actions{margin-left:0;width:100%;justify-content:flex-end}}
 </style>
 </head>
 <body>
-<header class="site"><div class="wrap">
-  <p class="eyebrow">Daily job board</p>
-  <h1>__TITLE__</h1>
+<nav><div class="wrap">
+  <a class="mark" href="#"><span class="dotlogo" aria-hidden="true"></span>__TITLE__</a>
+  <div class="nav-right"><span class="live">LIVE</span><span>UPDATED __BUILD__</span></div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>Every sponsored early-childhood role. One board.</h1>
   <p class="sub">__SUBTITLE__</p>
-  <p class="stats" id="stats"></p>
+  <div class="kpis" id="kpis"></div>
 </div></header>
 
-<div class="bar"><div class="wrap">
-  <div class="chips" id="chips" role="group" aria-label="Filter by date added">
-    <button class="chip" data-days="0">Added today</button>
-    <button class="chip" data-days="2">Last 3 days</button>
-    <button class="chip" data-days="6">Last 7 days</button>
-    <button class="chip" data-days="29">Last 30 days</button>
-    <button class="chip" data-days="all" aria-pressed="true">All</button>
+<div class="toolbar"><div class="wrap">
+  <div class="tabs" role="tablist" aria-label="Views">
+    <button class="tab" role="tab" data-tab="all" aria-selected="true">All roles</button>
+    <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved <span class="ct" id="ct-saved"></span></button>
+    <button class="tab" role="tab" data-tab="applied" aria-selected="false">Applied <span class="ct" id="ct-applied"></span></button>
   </div>
-  <select id="loc" aria-label="Filter by location">__LOCATIONS__</select>
-  <select id="sort" aria-label="Sort by">
+  <select id="loc" aria-label="Location">__LOCATIONS__</select>
+  <select id="sort" aria-label="Sort">
     <option value="added">Newest added</option>
     <option value="posted">Newest posted</option>
     <option value="distance">Nearest</option>
   </select>
-  <select id="spons" aria-label="Filter by sponsorship">
+  <select id="spons" aria-label="Sponsorship">
     <option value="all">Any sponsorship</option>
     <option value="likely">Likely / confirmed only</option>
   </select>
-  <span class="grow"><input type="search" id="q" placeholder="Search title, employer, suburb…" aria-label="Search listings"></span>
+  <span class="search"><input type="search" id="q" placeholder="Search roles, employers, suburbs" aria-label="Search"><span class="kbd">/</span></span>
+</div></div>
+
+<div class="chiprow"><div class="wrap" id="chips" role="group" aria-label="Date added">
+  <button class="chip" data-days="0">Today</button>
+  <button class="chip" data-days="2">3 days</button>
+  <button class="chip" data-days="6">7 days</button>
+  <button class="chip" data-days="29">30 days</button>
+  <button class="chip" data-days="all" aria-pressed="true">All time</button>
+  <button class="hidden-link" id="hiddenToggle" hidden></button>
 </div></div>
 
 <main><div class="wrap" id="list"></div></main>
 
 <footer><div class="wrap">
-  Built __BUILD__ · __COUNT__ listings tracked.
-  "Likely" = a sponsorship/relocation keyword was found in the ad; "confirmed" = the source flagged it.
-  Always confirm sponsorship in the listing before applying. "Added" = when it first appeared here; "posted" = the employer's date.
+  Built __BUILD__ · __COUNT__ roles tracked · refreshed every morning.<br>
+  "Likely" means a sponsorship or relocation keyword was found in the ad; "confirmed" means the source flagged it — always verify in the listing before applying.
+  "Added" is when a role first appeared here; "posted" is the employer's date. Saved, applied and hidden roles are stored privately in this browser.
 </div></footer>
+<div id="toast" role="status"></div>
 
 <script>
 const DATA = __DATA__;
 const BUILD = new Date("__BUILD__T00:00:00");
-const state = {days:"all", loc:"all", spons:"all", sort:"added", q:""};
+const state = {tab:"all", days:"all", loc:"all", spons:"all", sort:"added", q:"", showHidden:false};
 const dayMs = 86400000;
+
+/* ---- persistence (graceful if storage is blocked) ---- */
+const store = {
+  get(k){ try{ return new Set(JSON.parse(localStorage.getItem(k)||"[]")); }catch(e){ return new Set(); } },
+  set(k,s){ try{ localStorage.setItem(k, JSON.stringify([...s])); }catch(e){} }
+};
+let saved = store.get("weezy_saved"), applied = store.get("weezy_applied"), hidden = store.get("weezy_hidden");
+const keyOf = j => (j.profile_id||"")+"|"+j.uid;
+
 function dAgo(iso){ if(!iso) return null; return Math.round((BUILD - new Date(iso+"T00:00:00"))/dayMs); }
 function rel(d){ return d==null?"unknown":d<=0?"today":d===1?"yesterday":d+" days ago"; }
-function bucket(d){
-  if(d==null) return ["9","Date unknown"];
+function bucket(d){ if(d==null) return ["9","Date unknown"];
   if(d<=0) return ["0","today"]; if(d===1) return ["1","yesterday"];
-  if(d<=6) return ["2","this week"]; if(d<=29) return ["3","this month"]; return ["4","older"];
-}
-function distText(j){
-  if(j.distance_km==null) return "Distance unknown — check listing";
-  return Math.round(j.distance_km)+" km"+(j.drive_hours!=null?" · ~"+j.drive_hours+" h drive":"");
-}
-const TIER={confirmed:"Sponsorship confirmed",likely:"Sponsorship likely",unknown:"Sponsorship unclear"};
+  if(d<=6) return ["2","this week"]; if(d<=29) return ["3","this month"]; return ["4","older"]; }
+function distText(j){ if(j.distance_km==null) return "distance unknown";
+  return Math.round(j.distance_km)+" km · ~"+(j.drive_hours!=null?j.drive_hours:"?")+" h drive"; }
+const TIER={confirmed:"Confirmed sponsorship",likely:"Likely sponsorship",unknown:"Sponsorship unclear"};
+const LOCC={}; [...new Set(DATA.map(x=>x.profile_id))].sort().forEach((id,i)=>LOCC[id]=i%2===0?"var(--syd)":"var(--lud)");
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg;
+  t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),1800); }
 
+/* ---- KPIs ---- */
+function kpis(){
+  const todayN = DATA.filter(j=>dAgo(j.date_added)<=0).length;
+  const sponsN = DATA.filter(j=>j.sponsorship!=="unknown").length;
+  const el=document.getElementById("kpis");
+  el.innerHTML =
+    '<div class="kpi accent"><b>'+DATA.length+'</b><span>Roles tracked</span></div>'+
+    '<div class="kpi"><b>'+todayN+'</b><span>Added today</span></div>'+
+    '<div class="kpi"><b>'+sponsN+'</b><span>Sponsorship signals</span></div>'+
+    '<div class="kpi"><b>'+saved.size+'</b><span>Saved</span></div>'+
+    '<div class="kpi"><b>'+applied.size+'</b><span>Applied</span></div>';
+  document.getElementById("ct-saved").textContent = saved.size||"";
+  document.getElementById("ct-applied").textContent = applied.size||"";
+}
+
+/* ---- render ---- */
 function render(){
+  kpis();
   const max = state.days==="all" ? Infinity : +state.days;
   const q = state.q.trim().toLowerCase();
   let rows = DATA.filter(j=>{
-    const da = dAgo(j.date_added);
-    if(da!=null && da > max) return false;
+    const k=keyOf(j);
+    if(state.tab==="saved" && !saved.has(k)) return false;
+    if(state.tab==="applied" && !applied.has(k)) return false;
+    if(state.tab==="all" && hidden.has(k) && !state.showHidden) return false;
+    const da=dAgo(j.date_added);
+    if(da!=null && da>max) return false;
     if(state.loc!=="all" && j.profile_id!==state.loc) return false;
     if(state.spons==="likely" && j.sponsorship==="unknown") return false;
     if(q){ const b=(j.title+" "+j.company+" "+j.location).toLowerCase(); if(!b.includes(q)) return false; }
     return true;
   });
-  const todayN = DATA.filter(j=>dAgo(j.date_added)<=0).length;
-  document.getElementById("stats").innerHTML="<b>"+rows.length+"</b> shown · <b>"+todayN+"</b> added today";
+
+  const ht=document.getElementById("hiddenToggle");
+  if(hidden.size && state.tab==="all"){ ht.hidden=false;
+    ht.textContent = state.showHidden ? "Conceal hidden roles" : "Show hidden ("+hidden.size+")"; }
+  else ht.hidden=true;
 
   const list=document.getElementById("list");
-  if(!rows.length){ list.innerHTML='<p class="empty">No listings match this filter. Try widening the date range, switching location, or clearing the search — the board refreshes every morning.</p>'; return; }
+  if(!rows.length){
+    const msgs={saved:["Nothing saved yet","Tap the star on any role to keep it here."],
+                applied:["No applications tracked","Mark roles as applied with the check button to build your pipeline."],
+                all:["No roles match","Widen the date range, switch location, or clear the search — the board refreshes every morning."]};
+    const m=msgs[state.tab]||msgs.all;
+    list.innerHTML='<div class="empty"><h3>'+m[0]+'</h3><p>'+m[1]+'</p></div>'; return;
+  }
 
-  // sort + grouping dimension
   let groups={}, titles={}, order;
   if(state.sort==="distance"){
     rows.sort((a,b)=>(a.distance_km==null?1e9:a.distance_km)-(b.distance_km==null?1e9:b.distance_km));
@@ -718,36 +869,70 @@ function render(){
   let html="";
   order.forEach(k=>{
     if(!groups[k]) return;
-    html+='<section class="group"><h2>'+esc(titles[k])+' <span class="n">'+groups[k].length+'</span></h2>';
+    html+='<section class="group"><h2>'+esc(titles[k])+'</h2>';
     groups[k].forEach(j=>{
-      const tier=j.sponsorship||"unknown";
-      const da=dAgo(j.date_added);
-      const locTag = j.profile_label ? '<span class="loc">'+esc(j.profile_label)+'</span>' : '';
-      const postedTxt = j.posted ? '<span class="posted">· posted '+esc(j.posted)+'</span>' : '<span class="posted">· posting date n/a</span>';
-      html+='<article class="card">'+
-        '<span class="pill '+tier+'">'+TIER[tier]+'</span>'+locTag+
-        '<span class="added">Added '+rel(da)+'</span>'+
+      const key=keyOf(j), tier=j.sponsorship||"unknown", da=dAgo(j.date_added);
+      const isNew = da!=null && da<=0;
+      html+='<article class="card'+(applied.has(key)?" applied":"")+'" data-k="'+esc(key)+'">'+
+        '<div class="rowtop">'+
+          (isNew?'<span class="badge new">New</span>':'')+
+          '<span class="badge '+tier+'">'+TIER[tier]+'</span>'+
+          (j.profile_label?'<span class="locdot"><i style="background:'+(LOCC[j.profile_id]||"var(--na)")+'"></i>'+esc(j.profile_label)+'</span>':'')+
+          '<div class="actions">'+
+            '<button class="icon-btn'+(saved.has(key)?" on":"")+'" data-act="save" title="Save" aria-label="Save role">'+(saved.has(key)?"★":"☆")+'</button>'+
+            '<button class="icon-btn'+(applied.has(key)?" on-ok":"")+'" data-act="applied" title="Mark applied" aria-label="Mark applied">✓</button>'+
+            '<button class="icon-btn" data-act="copy" title="Copy link" aria-label="Copy link">⧉</button>'+
+            '<button class="icon-btn" data-act="hide" title="'+(hidden.has(key)?"Unhide":"Hide")+'" aria-label="Hide role">'+(hidden.has(key)?"⊕":"✕")+'</button>'+
+          '</div>'+
+        '</div>'+
         '<h3 class="title">'+esc(j.title)+'</h3>'+
         '<div class="org">'+(esc(j.company)||"Employer not listed")+' · '+(esc(j.location)||"—")+'</div>'+
-        '<div class="meta">📍 '+esc(distText(j))+' '+postedTxt+'</div>'+
-        (j.description?'<p class="desc">'+esc(j.description)+'</p>':'<div style="height:8px"></div>')+
-        '<a class="apply" href="'+esc(j.url)+'" target="_blank" rel="noopener">Apply</a>'+
-        '<span class="src">'+esc(j.source)+'</span>'+
+        '<div class="meta">'+esc(distText(j))+'<span class="sep">·</span>added '+esc(rel(da))+
+          '<span class="sep">·</span>'+(j.posted?('posted '+esc(j.posted)):'posting date n/a')+'</div>'+
+        (j.description?'<p class="desc">'+esc(j.description)+'</p>':'<div style="height:6px"></div>')+
+        '<div class="cardfoot"><a class="apply" href="'+esc(j.url)+'" target="_blank" rel="noopener">Apply</a>'+
+        '<span class="src">'+esc(j.source)+'</span></div>'+
       '</article>';
     });
     html+='</section>';
   });
   list.innerHTML=html;
 }
+
+/* ---- events ---- */
+document.getElementById("list").addEventListener("click",e=>{
+  const btn=e.target.closest(".icon-btn"); if(!btn) return;
+  const card=e.target.closest(".card"); const k=card.dataset.k; const act=btn.dataset.act;
+  const job=DATA.find(j=>keyOf(j)===k);
+  if(act==="save"){ saved.has(k)?saved.delete(k):saved.add(k); store.set("weezy_saved",saved);
+    toast(saved.has(k)?"Saved":"Removed from saved"); }
+  if(act==="applied"){ applied.has(k)?applied.delete(k):applied.add(k); store.set("weezy_applied",applied);
+    toast(applied.has(k)?"Marked as applied":"Unmarked"); }
+  if(act==="hide"){ hidden.has(k)?hidden.delete(k):hidden.add(k); store.set("weezy_hidden",hidden);
+    toast(hidden.has(k)?"Hidden — restore via “Show hidden”":"Restored"); }
+  if(act==="copy"){ const link=(job&&job.url)||location.href;
+    if(navigator.clipboard){ navigator.clipboard.writeText(link).then(()=>toast("Link copied")); }
+    else toast("Copy not available"); return; }
+  render();
+});
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
+  t.setAttribute("aria-selected","true"); state.tab=t.dataset.tab; render();
+}));
 document.getElementById("chips").addEventListener("click",e=>{
   const b=e.target.closest(".chip"); if(!b) return;
   document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
   b.setAttribute("aria-pressed","true"); state.days=b.dataset.days; render();
 });
+document.getElementById("hiddenToggle").addEventListener("click",()=>{state.showHidden=!state.showHidden;render();});
 document.getElementById("loc").addEventListener("change",e=>{state.loc=e.target.value;render();});
 document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
 document.getElementById("spons").addEventListener("change",e=>{state.spons=e.target.value;render();});
 document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
+document.addEventListener("keydown",e=>{
+  if(e.key==="/" && !/^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault(); document.getElementById("q").focus(); }
+});
 render();
 </script>
 </body>
