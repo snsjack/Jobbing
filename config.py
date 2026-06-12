@@ -59,52 +59,6 @@ LOCATIONS = [
             "work visa", "visa nomination", "employer nomination",
         ],
     },
-    {
-        "id": "ludwigsburg",
-        "label": "Ludwigsburg · Baden-Württemberg",
-        "home_city": "Ludwigsburg, Germany",
-        "home_lat": 48.8974,
-        "home_lon": 9.1916,
-        "radius_km": 250,                      # ~4 h; reaches FR/AT borders
-        "use_arbeitnow": True,                 # DACH + native visa flag
-        "use_adzuna": True,
-        "adzuna_countries": ["de", "fr", "at"],
-        "adzuna_queries": [
-            "Erzieher", "Kita", "Kindergarten", "pädagogische Fachkraft",
-            "Kinderpfleger", "early childhood",
-        ],
-        "educator_keywords": [
-            # German
-            "erzieher", "erzieherin", "kinderpfleger", "kinderpflegerin",
-            "pädagogische fachkraft", "paedagogische fachkraft", "kita",
-            "kindergarten", "kinderkrippe", "krippe", "frühpädagog",
-            "fruehpaedagog", "sozialpädagogische assisten", "sozialassistent",
-            "kinderbetreuung", "elementarpädagog", "elementarpaedagog",
-            "tagesmutter", "tagesvater",
-            # French (cross-border)
-            "petite enfance", "jeunes enfants", "auxiliaire de puericulture",
-            "auxiliaire de puériculture", "atsem", "crèche", "creche",
-            "école maternelle", "ecole maternelle",
-            # English (international schools)
-            "early childhood", "early years", "preschool", "kindergarten",
-            "nursery", "montessori",
-        ],
-        "exclude_title_keywords": [
-            "physical education", "higher education", "hochschule",
-            "professor", "dozent",
-        ],
-        "sponsorship_keywords": [
-            # English
-            "visa sponsorship", "sponsorship", "we sponsor", "will sponsor",
-            "relocation", "relocate", "work permit", "blue card",
-            # German
-            "blaue karte", "visumssponsoring", "visum", "arbeitserlaubnis",
-            "umzugshilfe", "aufenthaltstitel", "fachkräfteeinwanderung",
-            "fachkraefteeinwanderung",
-            # French
-            "parrainage", "visa de travail", "permis de travail",
-        ],
-    },
 ]
 
 # Which locations to build. Default: all of them. Override with the LOCATION
