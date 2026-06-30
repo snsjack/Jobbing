@@ -25,12 +25,13 @@
   #login .rule{width:2px;align-self:stretch;margin:40px 0;
     background:linear-gradient(180deg,transparent,rgba(255,255,255,.6),transparent)}
   #login .right{flex:1;padding-left:46px;max-width:430px}
-  .tile{display:flex;align-items:center;gap:16px;padding:10px;border-radius:7px;cursor:default}
-  .avatar{width:62px;height:62px;border-radius:8px;flex:none;border:2px solid #fff;
+  .panel{display:flex;flex-direction:column;align-items:center;gap:2px}
+  .tile{display:flex;flex-direction:column;align-items:center;gap:12px;padding:10px;border-radius:7px;cursor:default}
+  .avatar{width:74px;height:74px;border-radius:9px;flex:none;border:2px solid #fff;
     background:conic-gradient(from 200deg,#ff9a5a,#ffd25a,#7ad1ff,#9b8cff,#ff9a5a);
     box-shadow:0 2px 6px rgba(0,0,0,.35)}
-  .tile .who{font-size:20px;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.3)}
-  .pwwrap{margin:12px 0 0 78px;display:flex;align-items:center;gap:8px}
+  .tile .who{font-size:22px;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.3)}
+  .pwwrap{margin:16px 0 0;display:flex;align-items:center;justify-content:center;gap:8px}
   .pwwrap input{font-family:inherit;font-size:14px;padding:6px 9px;border:1px solid #2a4d86;
     border-radius:3px;width:150px;background:#dfe8f7;color:#10254a;box-shadow:inset 0 1px 2px rgba(0,0,0,.25)}
   .pwwrap input:focus{outline:2px solid #ffd25a;outline-offset:1px}
@@ -38,7 +39,7 @@
     background:radial-gradient(circle at 35% 30%,#9be86a,#3a9e1e);color:#fff;font-size:14px;
     display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.4)}
   .go:hover{filter:brightness(1.08)}
-  .hint{margin:10px 0 0 78px;font-size:12px;opacity:.9}
+  .hint{margin:12px 0 0;font-size:12px;opacity:.9;text-align:center}
   .hint.err{color:#ffe08a;font-weight:700}
   .shake{animation:shake .4s}
   @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
@@ -67,7 +68,7 @@
     width:min(900px,92vw);height:min(620px,82vh);background:#ECE9D8;
     border:1px solid #0831d9;border-radius:8px 8px 3px 3px;
     box-shadow:0 14px 40px rgba(0,0,0,.5);overflow:hidden}
-  .win.max{width:100%!important;height:100%!important;left:0!important;top:0!important;border-radius:0}
+  .win.max{width:100%!important;height:calc(100% - 34px)!important;left:0!important;top:0!important;border-radius:0}
   .win .bar{flex:0 0 auto;height:30px;display:flex;align-items:center;gap:8px;padding:0 5px 0 8px;
     cursor:move;color:#fff;
     background:linear-gradient(180deg,#0a64e6 0%,#2a7bf0 9%,#0a5ad6 50%,#0a52c6 90%,#3f8ae8 100%);
@@ -87,6 +88,27 @@
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
   .linkpanel a{display:inline-block;background:#0a5ad6;color:#fff;text-decoration:none;
     padding:9px 18px;border-radius:6px;font-weight:700;font-size:13px}
+  /* taskbar */
+  #taskbar{position:absolute;left:0;right:0;bottom:0;height:34px;z-index:9000;display:flex;align-items:center;
+    background:linear-gradient(180deg,#3168d6 0,#2a8bf0 8%,#125ee0 15%,#1453c8 88%,#2f7be6 100%);
+    box-shadow:0 -1px 4px rgba(0,0,0,.45)}
+  #startbtn{height:28px;margin:3px 10px 3px 3px;padding:0 18px 0 9px;border:0;cursor:pointer;
+    border-radius:0 14px 14px 0/0 15px 15px 0;display:flex;align-items:center;gap:7px;
+    background:linear-gradient(180deg,#6fc63a,#4a9e22 45%,#3a8a1e);color:#fff;
+    font:italic 700 15px Tahoma,sans-serif;text-shadow:0 1px 2px rgba(0,0,0,.45)}
+  #startbtn .flag{width:15px;height:15px;border-radius:3px;
+    background:conic-gradient(from 135deg,#f55,#fd5,#5c5,#59f,#f55);box-shadow:0 0 0 1px rgba(255,255,255,.6)}
+  #tasks{flex:1;display:flex;gap:5px;overflow:hidden;padding-right:8px}
+  .task{height:25px;max-width:180px;flex:0 1 180px;display:flex;align-items:center;gap:7px;padding:0 10px;
+    border:1px solid rgba(255,255,255,.28);border-radius:3px;cursor:pointer;color:#fff;
+    font:400 12px Tahoma,sans-serif;overflow:hidden;
+    background:linear-gradient(180deg,#4a90ea,#1a63d6)}
+  .task .ti{font-size:13px;flex:none}
+  .task .tt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .task.active{background:linear-gradient(180deg,#10489f,#2f7be6);box-shadow:inset 0 2px 5px rgba(0,0,0,.5)}
+  #tray{display:flex;align-items:center;padding:0 12px;height:24px;margin:0 6px;color:#fff;
+    font:400 12px Tahoma,sans-serif;background:linear-gradient(180deg,#168ee0,#1366c8);
+    border-left:1px solid rgba(255,255,255,.35);box-shadow:inset 1px 0 0 rgba(0,0,0,.2)}
   @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
@@ -95,15 +117,13 @@
 <div id="login" role="dialog" aria-label="Log in">
   <div class="topline"></div>
   <div class="stage">
-    <div class="left"><div class="logo">Early-childhood roles with sponsorship<small>To begin, type your password</small></div></div>
-    <div class="rule"></div>
-    <div class="right">
+    <div class="panel">
       <div class="tile"><span class="avatar" aria-hidden="true"></span><span class="who">Educator</span></div>
       <form class="pwwrap" id="pwform">
         <input type="password" id="pw" aria-label="Password" autocomplete="off" autofocus>
         <button class="go" type="submit" title="Log in" aria-label="Log in">&#10148;</button>
       </form>
-      <div class="hint" id="hint">Hint: ask the owner</div>
+      <div class="hint" id="hint">To begin, type your password</div>
     </div>
   </div>
   <div class="botline"></div>
@@ -124,6 +144,11 @@
   </div>
   <div id="icons"></div>
   <div id="windows"></div>
+  <div id="taskbar">
+    <button id="startbtn" type="button"><span class="flag" aria-hidden="true"></span>start</button>
+    <div id="tasks"></div>
+    <div id="tray"><span id="clock"></span></div>
+  </div>
 </div>
 
 <script>
@@ -134,8 +159,7 @@ const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"
 
 /* ---- login ---- */
 const login=document.getElementById("login"), desktop=document.getElementById("desktop");
-function unlock(){ login.style.display="none"; desktop.hidden=false; try{sessionStorage.setItem("xp_unlocked","1");}catch(e){} buildDesktop();
-  const jobs=PROJECTS.find(p=>p.kind==="board"); if(jobs) openProject(jobs); }
+function unlock(){ login.style.display="none"; desktop.hidden=false; try{sessionStorage.setItem("xp_unlocked","1");}catch(e){} buildDesktop(); startClock(); }
 document.getElementById("pwform").addEventListener("submit",e=>{
   e.preventDefault();
   const v=document.getElementById("pw").value;
@@ -162,16 +186,34 @@ function buildDesktop(){
   });
 }
 
-/* ---- windows ---- */
-let zTop=5, offset=0;
+/* ---- windows + taskbar ---- */
+let zTop=5, offset=0, activeWin=null;
+const tasksBox=()=>document.getElementById("tasks");
+
+function setActive(win){ activeWin=win||null;
+  document.querySelectorAll(".task").forEach(b=>b.classList.toggle("active", !!win && b.dataset.pid===win.dataset.pid)); }
+function focusWin(win){ win.style.display=""; win.dataset.min=""; win.style.zIndex=(++zTop); setActive(win); }
+function minimize(win){ win.style.display="none"; win.dataset.min="1"; if(activeWin===win) setActive(null); }
+function closeWin(win){ const t=document.querySelector('.task[data-pid="'+win.dataset.pid+'"]'); if(t) t.remove();
+  win.remove(); if(activeWin===win) setActive(null); }
+
+function makeTask(p,win){
+  const t=document.createElement("button"); t.type="button"; t.className="task"; t.dataset.pid=p.id;
+  t.innerHTML='<span class="ti">'+esc(p.icon||"📁")+'</span><span class="tt">'+esc(p.name)+'</span>';
+  t.addEventListener("click",()=>{
+    if(win.dataset.min==="1") focusWin(win);       // restore a minimised window
+    else if(activeWin===win) minimize(win);        // active window -> minimise
+    else focusWin(win);                            // otherwise bring to front
+  });
+  tasksBox().appendChild(t);
+}
+
 function openProject(p){
-  // focus existing window for this project if open
   const ex=document.querySelector('.win[data-pid="'+p.id+'"]');
-  if(ex){ focusWin(ex); return; }
+  if(ex){ focusWin(ex); return; }                  // already open -> focus/restore
   const win=document.createElement("div"); win.className="win"; win.dataset.pid=p.id;
   const ox=24+offset, oy=22+offset; offset=(offset+28)%140;
-  win.style.left="calc(50% - "+(parseInt(win.style.width||450))+"px + "+ox+"px)";
-  win.style.left=Math.max(8,(window.innerWidth*0.5-420+ox))+"px"; win.style.top=(20+oy)+"px";
+  win.style.left=Math.max(8,(window.innerWidth*0.5-420+ox))+"px"; win.style.top=(18+oy)+"px";
   let bodyHTML;
   if(p.kind==="board"){ bodyHTML='<iframe src="board.html" title="'+esc(p.name)+'" loading="lazy"></iframe>'; }
   else if(p.kind==="note"){ bodyHTML='<div class="note">'+esc(p.note||"")+'</div>'; }
@@ -184,14 +226,19 @@ function openProject(p){
     '<button class="ctrl x" title="Close" aria-label="Close">✕</button></div>'+
     '<div class="body">'+bodyHTML+'</div>';
   document.getElementById("windows").appendChild(win);
+  makeTask(p,win);
   focusWin(win);
-  win.querySelector(".x").addEventListener("click",()=>win.remove());
-  win.querySelector(".max").addEventListener("click",()=>win.classList.toggle("max"));
-  win.querySelector(".min").addEventListener("click",()=>{win.style.display="none";});
+  win.querySelector(".x").addEventListener("click",e=>{e.stopPropagation();closeWin(win);});
+  win.querySelector(".max").addEventListener("click",e=>{e.stopPropagation();win.classList.toggle("max");});
+  win.querySelector(".min").addEventListener("click",e=>{e.stopPropagation();minimize(win);});
   win.addEventListener("mousedown",()=>focusWin(win));
   dragify(win);
 }
-function focusWin(win){ win.style.zIndex=(++zTop); }
+
+/* taskbar clock */
+function startClock(){ const c=document.getElementById("clock"); if(!c||c.dataset.on) return; c.dataset.on="1";
+  const tick=()=>{ const d=new Date(); let h=d.getHours(); const m=d.getMinutes(), ap=h<12?"AM":"PM";
+    h=h%12||12; c.textContent=h+":"+(m<10?"0":"")+m+" "+ap; }; tick(); setInterval(tick,15000); }
 
 /* drag by title bar (mouse + touch) */
 function dragify(win){
