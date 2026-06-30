@@ -94,6 +94,20 @@ SITE_TITLE     = "Early-childhood roles with sponsorship"
 SITE_SUBTITLE  = "Updated daily · filter by location, date added, and posting date"
 RETENTION_DAYS = 45                # drop listings not seen for this many days
 
+# --- Windows-XP-style shell ------------------------------------------------
+# A login screen (cosmetic only — static hosting can't truly gate the page)
+# leading to an XP desktop of "project" icons. Each project opens in a window.
+SITE_PASSWORD = os.environ.get("SITE_PASSWORD", "educator")   # change me (ASCII)
+SITE_USER     = "Educator"                                    # name on the login tile
+PROJECTS = [
+    {"id": "jobs", "name": "Early Educator Jobs", "icon": "🍎", "kind": "board"},
+    {"id": "readme", "name": "Read Me", "icon": "📄", "kind": "note",
+     "note": "Welcome to the desktop.\n\nDouble-click a project icon to open it.\n\n"
+             "“Early Educator Jobs” is a live board that refreshes every morning."},
+    # Add more, e.g.:
+    # {"id":"site","name":"Portfolio","icon":"🌐","kind":"link","target":"https://example.com"},
+]
+
 # ===========================================================================
 #  EMAIL (optional alternative to the webpage)
 # ===========================================================================
