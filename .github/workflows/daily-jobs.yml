@@ -37,6 +37,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/index.html jobs_db.json
+          git add docs/index.html docs/board.html jobs_db.json
           git diff --staged --quiet || git commit -m "Update listings $(date -u +%F)"
           git push
