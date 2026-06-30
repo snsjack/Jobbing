@@ -39,7 +39,17 @@ HTML_FILE = os.path.join(cfg.OUTPUT_DIR, "digest.html")
 CSV_FILE = os.path.join(cfg.OUTPUT_DIR, "jobs.csv")
 JOBS_DB = os.path.join(cfg.OUTPUT_DIR, "jobs_db.json")
 SITE_DIR = getattr(cfg, "SITE_DIR", "docs")
-SITE_INDEX = os.path.join(SITE_DIR, "index.html")
+BOARD_INDEX = os.path.join(SITE_DIR, "board.html")   # the job board (loads in a window)
+SHELL_INDEX = os.path.join(SITE_DIR, "index.html")   # the XP login + desktop shell
+
+
+def _fnv1a(s: str) -> str:
+    """Tiny deterministic hash (matches the JS in the shell) so the login
+    password isn't stored in plaintext in the page. Obfuscation, not security."""
+    h = 0x811c9dc5
+    for ch in s.encode("utf-8"):
+        h = ((h ^ ch) * 0x01000193) % 2**32
+    return format(h, "08x")
 
 USER_AGENT = "edu-job-finder/1.0 (personal job search)"
 
@@ -564,6 +574,218 @@ def write_csv(jobs):
                         j.distance_km, j.drive_hours, j.source, j.posted, j.url])
 
 
+_SHELL_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{font-family:Tahoma,Geneva,Verdana,sans-serif;overflow:hidden;
+    -webkit-font-smoothing:antialiased;color:#fff}
+  button{font-family:inherit}
+
+  /* ============ LOGIN (XP welcome homage) ============ */
+  #login{position:fixed;inset:0;display:flex;flex-direction:column;
+    background:linear-gradient(180deg,#5b86d6 0%,#7aa0e3 18%,#86aae8 50%,#6f97df 82%,#46659c 100%)}
+  #login .topline{flex:0 0 auto;height:3px;
+    background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.7),rgba(255,255,255,0));
+    box-shadow:0 1px 0 rgba(0,0,0,.25);margin-top:120px}
+  #login .stage{flex:1 1 auto;display:flex;align-items:center;justify-content:center;gap:0}
+  #login .left{flex:1;text-align:right;padding-right:46px;max-width:430px}
+  #login .left .logo{font-size:30px;font-weight:700;letter-spacing:-.5px;
+    text-shadow:0 2px 4px rgba(0,0,0,.3)}
+  #login .left .logo small{display:block;font-size:13px;font-weight:400;opacity:.9;margin-top:6px}
+  #login .rule{width:2px;align-self:stretch;margin:40px 0;
+    background:linear-gradient(180deg,transparent,rgba(255,255,255,.6),transparent)}
+  #login .right{flex:1;padding-left:46px;max-width:430px}
+  .tile{display:flex;align-items:center;gap:16px;padding:10px;border-radius:7px;cursor:default}
+  .avatar{width:62px;height:62px;border-radius:8px;flex:none;border:2px solid #fff;
+    background:conic-gradient(from 200deg,#ff9a5a,#ffd25a,#7ad1ff,#9b8cff,#ff9a5a);
+    box-shadow:0 2px 6px rgba(0,0,0,.35)}
+  .tile .who{font-size:20px;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.3)}
+  .pwwrap{margin:12px 0 0 78px;display:flex;align-items:center;gap:8px}
+  .pwwrap input{font-family:inherit;font-size:14px;padding:6px 9px;border:1px solid #2a4d86;
+    border-radius:3px;width:150px;background:#dfe8f7;color:#10254a;box-shadow:inset 0 1px 2px rgba(0,0,0,.25)}
+  .pwwrap input:focus{outline:2px solid #ffd25a;outline-offset:1px}
+  .go{width:28px;height:28px;border-radius:50%;border:2px solid #fff;cursor:pointer;
+    background:radial-gradient(circle at 35% 30%,#9be86a,#3a9e1e);color:#fff;font-size:14px;
+    display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.4)}
+  .go:hover{filter:brightness(1.08)}
+  .hint{margin:10px 0 0 78px;font-size:12px;opacity:.9}
+  .hint.err{color:#ffe08a;font-weight:700}
+  .shake{animation:shake .4s}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+  #login .botline{flex:0 0 auto;height:3px;margin-bottom:14px;
+    background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.7),rgba(255,255,255,0));
+    box-shadow:0 -1px 0 rgba(0,0,0,.25)}
+  #login .foot{flex:0 0 auto;display:flex;justify-content:space-between;align-items:center;
+    padding:0 28px 26px;font-size:12px;opacity:.92}
+  .power{display:inline-flex;align-items:center;gap:9px;cursor:default}
+  .power i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+    background:radial-gradient(circle at 35% 30%,#ff7a6a,#c0241a);border:2px solid #fff;font-size:13px}
+
+  /* ============ DESKTOP ============ */
+  #desktop{position:fixed;inset:0;overflow:hidden}
+  .wallpaper{position:absolute;inset:0;background:linear-gradient(180deg,#2e5fa3 0%,#5a8fcf 38%,#9fc0e6 56%,#bcd6ee 60%);z-index:0}
+  .wallpaper svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:46%}
+  #icons{position:absolute;top:18px;left:14px;z-index:1;display:flex;flex-direction:column;gap:6px}
+  .icon{width:88px;padding:8px 6px 9px;border-radius:4px;text-align:center;cursor:pointer;
+    user-select:none;border:1px solid transparent}
+  .icon .glyph{font-size:38px;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
+  .icon .lbl{margin-top:5px;font-size:12px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.9);line-height:1.2}
+  .icon.sel{background:rgba(49,106,197,.45);border:1px dotted rgba(255,255,255,.7)}
+  .icon:focus-visible{outline:2px solid #ffd25a}
+
+  .win{position:absolute;z-index:5;display:flex;flex-direction:column;
+    width:min(900px,92vw);height:min(620px,82vh);background:#ECE9D8;
+    border:1px solid #0831d9;border-radius:8px 8px 3px 3px;
+    box-shadow:0 14px 40px rgba(0,0,0,.5);overflow:hidden}
+  .win.max{width:100%!important;height:100%!important;left:0!important;top:0!important;border-radius:0}
+  .win .bar{flex:0 0 auto;height:30px;display:flex;align-items:center;gap:8px;padding:0 5px 0 8px;
+    cursor:move;color:#fff;
+    background:linear-gradient(180deg,#0a64e6 0%,#2a7bf0 9%,#0a5ad6 50%,#0a52c6 90%,#3f8ae8 100%);
+    border-radius:7px 7px 0 0}
+  .win .bar .t{font-size:13px;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.4);flex:1;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
+  .win .bar .icn{font-size:14px;pointer-events:none}
+  .ctrl{width:21px;height:21px;border:1px solid #fff;border-radius:3px;cursor:pointer;color:#fff;
+    font:700 12px/1 Tahoma,sans-serif;display:grid;place-items:center;
+    background:linear-gradient(180deg,#3f8ae8,#0a5ad6)}
+  .ctrl.x{background:linear-gradient(180deg,#f08a6a,#d23a1e)}
+  .ctrl:hover{filter:brightness(1.12)}
+  .win .body{flex:1 1 auto;background:#fff;overflow:auto;position:relative}
+  .win .body iframe{width:100%;height:100%;border:0;display:block}
+  .note{padding:18px 20px;color:#10254a;font-size:13.5px;line-height:1.7;white-space:pre-wrap;background:#fff;height:100%}
+  .linkpanel{padding:26px;text-align:center;color:#10254a;background:#fff;height:100%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+  .linkpanel a{display:inline-block;background:#0a5ad6;color:#fff;text-decoration:none;
+    padding:9px 18px;border-radius:6px;font-weight:700;font-size:13px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<div id="login" role="dialog" aria-label="Log in">
+  <div class="topline"></div>
+  <div class="stage">
+    <div class="left"><div class="logo">__TITLE__<small>To begin, type your password</small></div></div>
+    <div class="rule"></div>
+    <div class="right">
+      <div class="tile"><span class="avatar" aria-hidden="true"></span><span class="who">__USER__</span></div>
+      <form class="pwwrap" id="pwform">
+        <input type="password" id="pw" aria-label="Password" autocomplete="off" autofocus>
+        <button class="go" type="submit" title="Log in" aria-label="Log in">&#10148;</button>
+      </form>
+      <div class="hint" id="hint">Hint: ask the owner</div>
+    </div>
+  </div>
+  <div class="botline"></div>
+  <div class="foot">
+    <span class="power"><i>&#9211;</i> Turn off computer</span>
+    <span>build __BUILD__</span>
+  </div>
+</div>
+
+<div id="desktop" hidden>
+  <div class="wallpaper" aria-hidden="true">
+    <svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+      <defs><linearGradient id="h" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0" stop-color="#8bc34a"/><stop offset="1" stop-color="#3f7a25"/></linearGradient></defs>
+      <path d="M0,150 C260,60 520,40 760,110 C1000,180 1230,150 1440,80 L1440,400 L0,400 Z" fill="url(#h)"/>
+      <path d="M0,220 C300,160 600,180 900,230 C1140,270 1300,250 1440,210 L1440,400 L0,400 Z" fill="#3f7a25" opacity=".55"/>
+    </svg>
+  </div>
+  <div id="icons"></div>
+  <div id="windows"></div>
+</div>
+
+<script>
+const PWHASH="__PWHASH__";
+const PROJECTS=__PROJECTS__;
+function fnv1a(s){let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0;}return("0000000"+h.toString(16)).slice(-8);}
+const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---- login ---- */
+const login=document.getElementById("login"), desktop=document.getElementById("desktop");
+function unlock(){ login.style.display="none"; desktop.hidden=false; try{sessionStorage.setItem("xp_unlocked","1");}catch(e){} buildDesktop();
+  const jobs=PROJECTS.find(p=>p.kind==="board"); if(jobs) openProject(jobs); }
+document.getElementById("pwform").addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=document.getElementById("pw").value;
+  if(fnv1a(v)===PWHASH){ unlock(); }
+  else{ const h=document.getElementById("hint"); h.textContent="That password is incorrect."; h.classList.add("err");
+    const t=document.querySelector(".tile"); t.classList.remove("shake"); void t.offsetWidth; t.classList.add("shake");
+    document.getElementById("pw").value=""; }
+});
+try{ if(sessionStorage.getItem("xp_unlocked")==="1"){ unlock(); } }catch(e){}
+
+/* ---- desktop icons ---- */
+function buildDesktop(){
+  const box=document.getElementById("icons"); if(box.dataset.done) return; box.dataset.done="1";
+  let last=0,lastEl=null;
+  PROJECTS.forEach(p=>{
+    const el=document.createElement("div"); el.className="icon"; el.tabIndex=0;
+    el.innerHTML='<div class="glyph">'+esc(p.icon||"📁")+'</div><div class="lbl">'+esc(p.name)+'</div>';
+    el.addEventListener("click",()=>{
+      document.querySelectorAll(".icon").forEach(i=>i.classList.remove("sel")); el.classList.add("sel");
+      const now=Date.now(); if(lastEl===el && now-last<450){ openProject(p); } last=now; lastEl=el;
+    });
+    el.addEventListener("keydown",e=>{ if(e.key==="Enter") openProject(p); });
+    box.appendChild(el);
+  });
+}
+
+/* ---- windows ---- */
+let zTop=5, offset=0;
+function openProject(p){
+  // focus existing window for this project if open
+  const ex=document.querySelector('.win[data-pid="'+p.id+'"]');
+  if(ex){ focusWin(ex); return; }
+  const win=document.createElement("div"); win.className="win"; win.dataset.pid=p.id;
+  const ox=24+offset, oy=22+offset; offset=(offset+28)%140;
+  win.style.left="calc(50% - "+(parseInt(win.style.width||450))+"px + "+ox+"px)";
+  win.style.left=Math.max(8,(window.innerWidth*0.5-420+ox))+"px"; win.style.top=(20+oy)+"px";
+  let bodyHTML;
+  if(p.kind==="board"){ bodyHTML='<iframe src="board.html" title="'+esc(p.name)+'" loading="lazy"></iframe>'; }
+  else if(p.kind==="note"){ bodyHTML='<div class="note">'+esc(p.note||"")+'</div>'; }
+  else if(p.kind==="link"){ bodyHTML='<div class="linkpanel"><div>'+esc(p.name)+'</div><a href="'+esc(p.target||"#")+'" target="_blank" rel="noopener">Open in new tab ↗</a></div>'; }
+  else { bodyHTML='<div class="note">Nothing here yet.</div>'; }
+  win.innerHTML=
+    '<div class="bar"><span class="icn">'+esc(p.icon||"📁")+'</span><span class="t">'+esc(p.name)+'</span>'+
+    '<button class="ctrl min" title="Minimize" aria-label="Minimize">_</button>'+
+    '<button class="ctrl max" title="Maximize" aria-label="Maximize">▢</button>'+
+    '<button class="ctrl x" title="Close" aria-label="Close">✕</button></div>'+
+    '<div class="body">'+bodyHTML+'</div>';
+  document.getElementById("windows").appendChild(win);
+  focusWin(win);
+  win.querySelector(".x").addEventListener("click",()=>win.remove());
+  win.querySelector(".max").addEventListener("click",()=>win.classList.toggle("max"));
+  win.querySelector(".min").addEventListener("click",()=>{win.style.display="none";});
+  win.addEventListener("mousedown",()=>focusWin(win));
+  dragify(win);
+}
+function focusWin(win){ win.style.zIndex=(++zTop); }
+
+/* drag by title bar (mouse + touch) */
+function dragify(win){
+  const bar=win.querySelector(".bar"); let sx,sy,ox,oy,drag=false;
+  function down(e){ if(e.target.closest(".ctrl")||win.classList.contains("max"))return;
+    drag=true; const pt=e.touches?e.touches[0]:e; sx=pt.clientX; sy=pt.clientY;
+    const r=win.getBoundingClientRect(); ox=r.left; oy=r.top; focusWin(win); e.preventDefault(); }
+  function move(e){ if(!drag)return; const pt=e.touches?e.touches[0]:e;
+    win.style.left=Math.max(0,ox+pt.clientX-sx)+"px"; win.style.top=Math.max(0,oy+pt.clientY-sy)+"px"; }
+  function up(){ drag=false; }
+  bar.addEventListener("mousedown",down); document.addEventListener("mousemove",move); document.addEventListener("mouseup",up);
+  bar.addEventListener("touchstart",down,{passive:false}); document.addEventListener("touchmove",move,{passive:false}); document.addEventListener("touchend",up);
+}
+</script>
+</body>
+</html>"""
+
+
 # ---------------------------------------------------------------------------
 # Persistent job database + daily webpage (GitHub Pages)
 # ---------------------------------------------------------------------------
@@ -1009,8 +1231,28 @@ def render_site(entries):
     }.items():
         html_doc = html_doc.replace(key, val)
 
-    with open(SITE_INDEX, "w", encoding="utf-8") as f:
+    with open(BOARD_INDEX, "w", encoding="utf-8") as f:
         f.write(html_doc)
+
+
+def render_shell():
+    """Build the Windows-XP-style login + desktop shell (index.html). The job
+    board (board.html) loads inside a draggable window."""
+    os.makedirs(SITE_DIR, exist_ok=True)
+    build_date = dt.date.today().isoformat()
+    projects = getattr(cfg, "PROJECTS", [
+        {"id": "jobs", "name": "Early Educator Jobs", "icon": "🍎", "kind": "board"}])
+    doc = _SHELL_TEMPLATE
+    for key, val in {
+        "__TITLE__": html.escape(getattr(cfg, "SITE_TITLE", "Desktop")),
+        "__USER__": html.escape(getattr(cfg, "SITE_USER", "User")),
+        "__BUILD__": build_date,
+        "__PWHASH__": _fnv1a(getattr(cfg, "SITE_PASSWORD", "educator")),
+        "__PROJECTS__": json.dumps(projects, ensure_ascii=False).replace("</", "<\\/"),
+    }.items():
+        doc = doc.replace(key, val)
+    with open(SHELL_INDEX, "w", encoding="utf-8") as f:
+        f.write(doc)
 
 
 def send_email(html_body, count):
@@ -1074,8 +1316,9 @@ def main():
     if getattr(cfg, "WEB_ENABLED", False) and not args.no_web:
         entries = update_jobs_db(matches)
         render_site(entries)
+        render_shell()
         added_today = sum(1 for e in entries if e.get("date_added") == dt.date.today().isoformat())
-        print(f"Wrote {SITE_INDEX} — {len(entries)} listings on the page, {added_today} added today.")
+        print(f"Wrote {SHELL_INDEX} + {BOARD_INDEX} — {len(entries)} listings, {added_today} added today.")
 
     if cfg.EMAIL_ENABLED and not args.no_email:
         try:
