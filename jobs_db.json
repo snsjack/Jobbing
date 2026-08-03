@@ -28,7 +28,7 @@
     "drive_hours": 0.0,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -96,7 +96,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-01-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -113,7 +113,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-05-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -130,24 +130,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5727451288": {
-    "uid": "adzuna:5727451288",
-    "source": "Adzuna (AU)",
-    "title": "Academic Team Leader – Early Childhood Education",
-    "company": "ECA",
-    "location": "Castle Hill, The Hills District",
-    "url": "https://www.adzuna.com.au/details/5727451288?utm_medium=api&utm_source=42100c80",
-    "description": "Academic Lead | Early Childhood Education | Level D Academic Education Centre of Australia (ECA) is a dynamic and diverse education group that stands at the forefront of Australia’s higher education sector, boasting campuses in Sydney, Brisbane, Melbourne and Adelaide, as well as",
-    "distance_km": 12.2,
-    "drive_hours": 0.2,
-    "sponsorship": "unknown",
-    "posted": "2026-05-13",
-    "last_seen": "2026-06-18",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -164,7 +147,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-05-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -215,7 +198,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -232,7 +215,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -249,7 +232,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-05-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -369,23 +352,6 @@
     "sponsorship": "unknown",
     "posted": "2026-02-25",
     "last_seen": "2026-07-25",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5722650421": {
-    "uid": "adzuna:5722650421",
-    "source": "Adzuna (AU)",
-    "title": "Educator",
-    "company": "Guardian Childcare & Education",
-    "location": "Eastwood, Ryde Area",
-    "url": "https://www.adzuna.com.au/details/5722650421?utm_medium=api&utm_source=42100c80",
-    "description": "Are you ready to inspire young minds? As an Educator at Guardian Childcare & Education Marsfield , you’ll help change the lives of children every day, in a fun and supportive team. Here’s the opportunity: Work with other passionate Educators and a supportive Centre Manager as you",
-    "distance_km": 21.1,
-    "drive_hours": 0.3,
-    "sponsorship": "unknown",
-    "posted": "2026-05-08",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -560,23 +526,6 @@
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
   },
-  "sydney|adzuna:5583010557": {
-    "uid": "adzuna:5583010557",
-    "source": "Adzuna (AU)",
-    "title": "Preschool 2 - Trainee Educator",
-    "company": "SDN",
-    "location": "Milperra, Bankstown Area",
-    "url": "https://www.adzuna.com.au/details/5583010557?utm_medium=api&utm_source=42100c80",
-    "description": "When you begin a career in an SDN Early Education and Care centre, you're joining a village of opportunity. Our centres are inclusive and unique environments where everyone is welcome and respected. Discover a community of professionals who are enhancing children's wellbeing by p",
-    "distance_km": 27.9,
-    "drive_hours": 0.4,
-    "sponsorship": "unknown",
-    "posted": "2026-01-14",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
   "sydney|adzuna:5716366355": {
     "uid": "adzuna:5716366355",
     "source": "Adzuna (AU)",
@@ -606,24 +555,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-03-30",
-    "last_seen": "2026-08-02",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5721342748": {
-    "uid": "adzuna:5721342748",
-    "source": "Adzuna (AU)",
-    "title": "Assistant Centre Director",
-    "company": "Guardian Childcare & Education",
-    "location": "Roseville, Ku-ring-gai Area",
-    "url": "https://www.adzuna.com.au/details/5721342748?utm_medium=api&utm_source=42100c80",
-    "description": "Develop, inspire, and grow. Creating safe and secure environments where young children thrive and where Teams are guided and nurtured to deliver best practice programs doesn’t just happen. It takes brave and professional people who want to turn their experience in early childhood",
-    "distance_km": 29.1,
-    "drive_hours": 0.4,
-    "sponsorship": "unknown",
-    "posted": "2026-05-07",
-    "last_seen": "2026-06-18",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -691,7 +623,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -793,7 +725,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-05-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1014,7 +946,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-04-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1031,7 +963,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-05-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1048,7 +980,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-05-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1099,7 +1031,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1133,7 +1065,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-05-24",
-    "last_seen": "2026-07-30",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1167,7 +1099,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-04-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1218,7 +1150,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-03-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1252,7 +1184,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1269,7 +1201,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-04-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1338,23 +1270,6 @@
     "sponsorship": "unknown",
     "posted": "2026-01-18",
     "last_seen": "2026-07-15",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734461799": {
-    "uid": "adzuna:5734461799",
-    "source": "Adzuna (AU)",
-    "title": "Casual Childcare Educators - Highest Rates in the Eastern suburbs",
-    "company": "Earlyhood Education and Care",
-    "location": "Sydney, Sydney Region",
-    "url": "https://www.adzuna.com.au/details/5734461799?utm_medium=api&utm_source=42100c80",
-    "description": "Are you a passionate Early Childhood Educator looking for flexibility, great pay, and the chance to make a real impact in children’s lives? Earlyhood Education is seeking Certificate III, Diploma, and ECT-qualified casual Educators to join some of the most highly regarded, exceed",
-    "distance_km": 36.2,
-    "drive_hours": 0.6,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1456,7 +1371,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-04-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1473,7 +1388,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-05-20",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1490,7 +1405,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-05-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1507,7 +1422,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-04-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1541,7 +1456,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1558,7 +1473,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-04-11",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1614,40 +1529,6 @@
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
   },
-  "sydney|adzuna:5727448284": {
-    "uid": "adzuna:5727448284",
-    "source": "Adzuna (AU)",
-    "title": "Early Childhood Educator – Cert III",
-    "company": "Connect Child And Family Services",
-    "location": "Hazelbrook, Blue Mountains",
-    "url": "https://www.adzuna.com.au/details/5727448284?utm_medium=api&utm_source=42100c80",
-    "description": "Early Childhood Educators Cert III – 3 x Full-Time (38 hrs/week) Positions Available Across our ‘Sibling Centres’ – Hazelwood and Possum Early Childhood Centre Location: Hazelbrook NSW Specialised Birth-3 Program and Preschool Program across two centres Join a Values-Driven, Evid",
-    "distance_km": 39.3,
-    "drive_hours": 0.6,
-    "sponsorship": "unknown",
-    "posted": "2026-05-13",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5727443180": {
-    "uid": "adzuna:5727443180",
-    "source": "Adzuna (AU)",
-    "title": "Early Childhood Teacher",
-    "company": "Connect Child And Family Services",
-    "location": "Hazelbrook, Blue Mountains",
-    "url": "https://www.adzuna.com.au/details/5727443180?utm_medium=api&utm_source=42100c80",
-    "description": "Early Childhood Teacher – Hazelwood Early Childhood Centre Full-Time (38 hrs/week) Location: Hazelbrook, NSW Specialised Birth-3 Program | Join a Values-Driven, Evidence-Informed Team Do you have a genuine passion for infants and toddlers? Do you believe the first three years sha",
-    "distance_km": 39.3,
-    "drive_hours": 0.6,
-    "sponsorship": "unknown",
-    "posted": "2026-05-13",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
   "sydney|adzuna:5650847863": {
     "uid": "adzuna:5650847863",
     "source": "Adzuna (AU)",
@@ -1660,7 +1541,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1682,23 +1563,6 @@
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
   },
-  "sydney|adzuna:5727461560": {
-    "uid": "adzuna:5727461560",
-    "source": "Adzuna (AU)",
-    "title": "Certificate III Trainee",
-    "company": "Rise & Shine Kindergarten",
-    "location": "Sylvania, Sutherland Area",
-    "url": "https://www.adzuna.com.au/details/5727461560?utm_medium=api&utm_source=42100c80",
-    "description": "About the Role: Begin your career in Early Childhood Education as a valued trainee Work alongside experienced educators to support children’s learning and development Learn how to create safe, engaging, and inclusive environments Contribute to daily routines, play experiences, an",
-    "distance_km": 39.8,
-    "drive_hours": 0.6,
-    "sponsorship": "unknown",
-    "posted": "2026-05-13",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
   "sydney|adzuna:5732139451": {
     "uid": "adzuna:5732139451",
     "source": "Adzuna (AU)",
@@ -1711,7 +1575,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-05-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1779,7 +1643,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-03-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1813,7 +1677,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1881,7 +1745,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-05-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1932,7 +1796,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-05-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -1984,23 +1848,6 @@
     "sponsorship": "unknown",
     "posted": "2026-05-28",
     "last_seen": "2026-06-28",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734334387": {
-    "uid": "adzuna:5734334387",
-    "source": "Adzuna (AU)",
-    "title": "Centre Manager & ECT | Central Coast",
-    "company": "Randstad",
-    "location": "Somersby, Gosford Area",
-    "url": "https://www.adzuna.com.au/details/5734334387?utm_medium=api&utm_source=42100c80",
-    "description": "Competitive salary package with annual bonus Full-time and part-time hours that offer work-life balance Childcare fee discount 15% ECEC Worker Retention Payment Great pathway to more leadership roles The Centre(s) These beautiful purpose-built childcare centres in Central Coast a",
-    "distance_km": 51.4,
-    "drive_hours": 0.8,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -2340,7 +2187,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-05-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -2357,7 +2204,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-03-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -2374,7 +2221,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -2511,23 +2358,6 @@
     "sponsorship": "unknown",
     "posted": "2026-06-10",
     "last_seen": "2026-07-15",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5738087526": {
-    "uid": "adzuna:5738087526",
-    "source": "Adzuna (AU)",
-    "title": "Paediatric Occupational Therapist | Clinic & School Based | Inner West",
-    "company": "E4 People",
-    "location": "Summer Hill, Ashfield Area",
-    "url": "https://www.adzuna.com.au/details/5738087526?utm_medium=api&utm_source=42100c80",
-    "description": "Join a well-established paediatric allied health service in Sydney’s Inner West, delivering therapy across clinic and community settings. This is a great opportunity for a paediatric Occupational Therapist who wants variety in their week, strong clinical support and a team with r",
-    "distance_km": 71.4,
-    "drive_hours": 1.1,
-    "sponsorship": "unknown",
-    "posted": "2026-05-23",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -2833,7 +2663,7 @@
     "drive_hours": 1.3,
     "sponsorship": "unknown",
     "posted": "2026-05-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -2918,109 +2748,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-06-08",
-    "last_seen": "2026-08-02",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734333941": {
-    "uid": "adzuna:5734333941",
-    "source": "Adzuna (AU)",
-    "title": "Early Childhood Educators (Cobbitty)",
-    "company": "Futuro Childcare and Education",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5734333941?utm_medium=api&utm_source=42100c80",
-    "description": "Educator Opportunities at Futuro Childcare and Education | Cobbitty Certificate III | Diploma | ECTs | Room Leaders This is a brand-new service opening in October 2026, and we are looking for our Foundation Team. About Futuro Futuro Childcare and Education creates safe, inspiring",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734337074": {
-    "uid": "adzuna:5734337074",
-    "source": "Adzuna (AU)",
-    "title": "Additional Educators x3 - Warrawong Community Preschool",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5734337074?utm_medium=api&utm_source=42100c80",
-    "description": "Job description 1 x Maximum Term, Part-Time - 15 hours per week - Monday to Friday @ 3 hours per day 1 x Maximum Term, Part-Time - 21 hours per week - Monday, Friday @ 8 hours per day, Wednesday @ 5 hours per day 1 x Maximum Term, Part-Time - 11 hours per week - Wednesday @ 5 hou",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734337118": {
-    "uid": "adzuna:5734337118",
-    "source": "Adzuna (AU)",
-    "title": "Certificate III Educator - Bundanoon District Community Preschool",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5734337118?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Term Only Maximum Term, Part Time 15 hours per week, Monday, Tuesday, Friday @ 5 hours per day. Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, ada",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734337087": {
-    "uid": "adzuna:5734337087",
-    "source": "Adzuna (AU)",
-    "title": "Additional Educator - Certificate III Qualified - Bulli Community Preschool",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5734337087?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Maximum Term, Part Time ASAP - December 2026 Monday @ 5 hours per day about big fat smile Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, adapt lea",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734331539": {
-    "uid": "adzuna:5734331539",
-    "source": "Adzuna (AU)",
-    "title": "Senior Occupational Therapist",
-    "company": "Treehouse Queanbeyan Inc",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5734331539?utm_medium=api&utm_source=42100c80",
-    "description": "Treehouse is a NFP Community Org that supports young children with developmental delay or disability up to the end of primary school, and their families, in the Queanbeyan, ACT and surrounding areas through: Speech Pathology and Occupational Therapy (and other Allied Health servi",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734337060": {
-    "uid": "adzuna:5734337060",
-    "source": "Adzuna (AU)",
-    "title": "Childcare Cook - Stanwell Park Early Learning - Wollongong",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5734337060?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, adapt learning approaches, and bring creativity and playfulness to a child’s day. And the beautiful",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3106,74 +2834,6 @@
     "sponsorship": "unknown",
     "posted": "2026-05-30",
     "last_seen": "2026-06-28",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5750183690": {
-    "uid": "adzuna:5750183690",
-    "source": "Adzuna (AU)",
-    "title": "Early Childhood Teacher - Koonawarra Community Preschool 0-5 - Wollongong",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5750183690?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Maximum Term, Full Time (until December 2026) 40 hours per week Monday to Friday @ 8 hours per day RDO Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgeme",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-06-03",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5750183695": {
-    "uid": "adzuna:5750183695",
-    "source": "Adzuna (AU)",
-    "title": "Certificate III Educator - Warrawong Community Preschool",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5750183695?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Permanent, Part-Time 15 hours per week Monday to Friday @ 3 hours per day about big fat smile Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, adapt",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-06-03",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5750183692": {
-    "uid": "adzuna:5750183692",
-    "source": "Adzuna (AU)",
-    "title": "Additional Educator - Port Kembla Community Preschool",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5750183692?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Maximum Term, part-time position Wednesday, 5 hours per day. Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, adapt learning approaches, and bring c",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-06-03",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5750183691": {
-    "uid": "adzuna:5750183691",
-    "source": "Adzuna (AU)",
-    "title": "Diploma Educators x2 - Bundanoon District Community Preschool",
-    "company": "Big Fat Smile",
-    "location": "East Bowral, Bowral Area",
-    "url": "https://www.adzuna.com.au/details/5750183691?utm_medium=api&utm_source=42100c80",
-    "description": "Job description Term Only Permanent, Part Time 16 hours per week Tuesday, Thursday @ 8 hours per day Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, adapt learning",
-    "distance_km": 97.1,
-    "drive_hours": 1.5,
-    "sponsorship": "unknown",
-    "posted": "2026-06-03",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3377,7 +3037,7 @@
     "drive_hours": 1.7,
     "sponsorship": "unknown",
     "posted": "2026-04-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3479,7 +3139,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2025-08-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3514,23 +3174,6 @@
     "sponsorship": "unknown",
     "posted": "2026-05-30",
     "last_seen": "2026-07-06",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734332648": {
-    "uid": "adzuna:5734332648",
-    "source": "Adzuna (AU)",
-    "title": "Deputy Service Leader- Before and After School Care",
-    "company": "The After School Klub",
-    "location": "Perthville, Bathurst",
-    "url": "https://www.adzuna.com.au/details/5734332648?utm_medium=api&utm_source=42100c80",
-    "description": "At TASK, it’s all about the kids – and the team that supports them! An exciting opportunity has become available at our Wentworth Falls Public School. We are recruiting a Deputy Service Leader . At TASK we strive to create joyful, secure, and inclusive child safe environments whe",
-    "distance_km": 122.9,
-    "drive_hours": 1.9,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3700,7 +3343,7 @@
     "drive_hours": 2.0,
     "sponsorship": "unknown",
     "posted": "2026-02-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3717,7 +3360,7 @@
     "drive_hours": 2.2,
     "sponsorship": "unknown",
     "posted": "2026-02-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3768,7 +3411,7 @@
     "drive_hours": 2.2,
     "sponsorship": "unknown",
     "posted": "2026-05-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3802,7 +3445,7 @@
     "drive_hours": 2.4,
     "sponsorship": "unknown",
     "posted": "2026-05-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3836,7 +3479,7 @@
     "drive_hours": 2.8,
     "sponsorship": "unknown",
     "posted": "2026-01-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3870,7 +3513,7 @@
     "drive_hours": 2.9,
     "sponsorship": "unknown",
     "posted": "2025-08-28",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3887,24 +3530,7 @@
     "drive_hours": 3.5,
     "sponsorship": "unknown",
     "posted": "2026-04-12",
-    "last_seen": "2026-08-02",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5735984466": {
-    "uid": "adzuna:5735984466",
-    "source": "Adzuna (AU)",
-    "title": "Early Childhood Teacher - St Nicholas Forster (Now Open)",
-    "company": "St Nicholas Diocese of Maitland-Newcastle",
-    "location": "Forster, Great Lakes Area",
-    "url": "https://www.adzuna.com.au/details/5735984466?utm_medium=api&utm_source=42100c80",
-    "description": "St Nicholas Early Education is seeking passionate, dedicated, and experienced leaders to join our leadership team at our brand new centre in Forster, NSW . We are looking for an Early Childhood Teacher to make a difference in our community. As part of our growing network, you’ll ",
-    "distance_km": 228.1,
-    "drive_hours": 3.5,
-    "sponsorship": "unknown",
-    "posted": "2026-05-21",
-    "last_seen": "2026-06-18",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3972,7 +3598,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-04-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -3989,7 +3615,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-04-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -4007,23 +3633,6 @@
     "sponsorship": "unknown",
     "posted": "2026-05-25",
     "last_seen": "2026-06-24",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-11"
-  },
-  "sydney|adzuna:5734332681": {
-    "uid": "adzuna:5734332681",
-    "source": "Adzuna (AU)",
-    "title": "Lead Educator - Birth to 3",
-    "company": "Wattle Early Childhood Centre",
-    "location": "Barton, South Canberra",
-    "url": "https://www.adzuna.com.au/details/5734332681?utm_medium=api&utm_source=42100c80",
-    "description": "Are you a passionate and experienced early childhood professional ready to make a meaningful impact in the lives of children from birth to three years of age? Wattle Early Childhood Centre is seeking a dedicated Early Childhood Teacher or Lead Educator to join our team and take o",
-    "distance_km": 239.5,
-    "drive_hours": 3.7,
-    "sponsorship": "unknown",
-    "posted": "2026-05-20",
-    "last_seen": "2026-06-18",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-11"
@@ -5485,7 +5094,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2025-11-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-12"
@@ -5825,7 +5434,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-06-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-13"
@@ -5859,7 +5468,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-13"
@@ -6505,7 +6114,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -6663,23 +6272,6 @@
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
   },
-  "sydney|adzuna:5748930073": {
-    "uid": "adzuna:5748930073",
-    "source": "Adzuna (AU)",
-    "title": "Occupational Therapist",
-    "company": "Integral Occupational Therapy",
-    "location": "Chatswood West, Willoughby Area",
-    "url": "https://www.adzuna.com.au/details/5748930073?utm_medium=api&utm_source=42100c80",
-    "description": "â¨ What You’ll Do: • Support our awesome little humans (ages 0–17) with OT assessments, and create tailored intervention plans that help them thrive. • Opportunities to have a mixed caseload shaped around your interests, but with focus of working with kids and young people. • Hy",
-    "distance_km": 29.3,
-    "drive_hours": 0.4,
-    "sponsorship": "unknown",
-    "posted": "2026-06-02",
-    "last_seen": "2026-06-18",
-    "profile_id": "sydney",
-    "profile_label": "Sydney · Schofields",
-    "date_added": "2026-06-15"
-  },
   "sydney|adzuna:5764092894": {
     "uid": "adzuna:5764092894",
     "source": "Adzuna (AU)",
@@ -6794,7 +6386,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -6896,7 +6488,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -6947,7 +6539,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-06-04",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -7032,7 +6624,7 @@
     "drive_hours": 1.3,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -7134,7 +6726,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-05-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -7151,7 +6743,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -7185,7 +6777,7 @@
     "drive_hours": 2.4,
     "sponsorship": "unknown",
     "posted": "2026-06-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-15"
@@ -7372,7 +6964,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-06-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-16"
@@ -7457,7 +7049,7 @@
     "drive_hours": 0.0,
     "sponsorship": "unknown",
     "posted": "2026-03-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-17"
@@ -8358,7 +7950,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-05-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-19"
@@ -8392,7 +7984,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-06-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-19"
@@ -8885,7 +8477,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-06-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-20"
@@ -9939,7 +9531,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-06-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-23"
@@ -10160,7 +9752,7 @@
     "drive_hours": 1.3,
     "sponsorship": "unknown",
     "posted": "2026-06-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-24"
@@ -10313,7 +9905,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-06-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-25"
@@ -10636,7 +10228,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-06-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-25"
@@ -11741,7 +11333,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-06-27",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-27"
@@ -12234,7 +11826,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-28"
@@ -12846,7 +12438,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-30"
@@ -12880,7 +12472,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-06-04",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-30"
@@ -12907,14 +12499,14 @@
     "source": "Adzuna (AU)",
     "title": "Casual Educators - Uniting Newcastle, Hunter & Central Coast",
     "company": "Uniting",
-    "location": "Upper Hunter, Newcastle Region",
+    "location": "Newcastle Region, New South Wales",
     "url": "https://www.adzuna.com.au/details/5778412622?utm_medium=api&utm_source=42100c80",
     "description": "At Uniting NSW.ACT, we believe every child deserves a great start in life – and that starts with you! We’re inviting passionate, reliable, and values-driven educators to join our casual pool across the Newcastle, Hunter and NSW Central Coast Region. Whether you're an experienced ",
-    "distance_km": 199.8,
-    "drive_hours": 3.1,
+    "distance_km": 144.4,
+    "drive_hours": 2.2,
     "sponsorship": "unknown",
     "posted": "2026-06-27",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-30"
@@ -12948,7 +12540,7 @@
     "drive_hours": 2.8,
     "sponsorship": "unknown",
     "posted": "2026-06-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-06-30"
@@ -13084,7 +12676,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-01"
@@ -13407,7 +12999,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13475,7 +13067,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13526,7 +13118,7 @@
     "drive_hours": 1.0,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13560,7 +13152,7 @@
     "drive_hours": 1.7,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13577,7 +13169,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13679,7 +13271,7 @@
     "drive_hours": 2.5,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13696,7 +13288,7 @@
     "drive_hours": 2.5,
     "sponsorship": "unknown",
     "posted": "2026-07-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-02"
@@ -13764,7 +13356,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-03"
@@ -13781,7 +13373,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-03"
@@ -13798,7 +13390,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-03"
@@ -14036,7 +13628,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-04",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-04"
@@ -14053,7 +13645,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-04",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-04"
@@ -14376,7 +13968,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-05"
@@ -14478,7 +14070,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-06-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14665,7 +14257,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14682,7 +14274,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-06-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14716,7 +14308,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14733,7 +14325,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-06-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14852,7 +14444,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-06-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14869,7 +14461,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14886,7 +14478,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-06-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-06"
@@ -14937,7 +14529,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-07"
@@ -15039,7 +14631,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-07"
@@ -15073,7 +14665,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15090,7 +14682,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15107,7 +14699,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15124,7 +14716,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15158,7 +14750,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15192,7 +14784,7 @@
     "drive_hours": 1.3,
     "sponsorship": "unknown",
     "posted": "2026-06-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15209,7 +14801,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15226,7 +14818,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15243,7 +14835,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15260,7 +14852,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15277,7 +14869,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15294,7 +14886,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15311,7 +14903,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15328,7 +14920,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-08"
@@ -15362,7 +14954,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-09"
@@ -15413,7 +15005,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-09"
@@ -15447,7 +15039,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-09"
@@ -15464,7 +15056,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-06-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-09"
@@ -15481,7 +15073,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-09"
@@ -15515,7 +15107,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -15617,7 +15209,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -15634,7 +15226,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -15821,7 +15413,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -15957,7 +15549,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -16059,7 +15651,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -16076,7 +15668,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -16246,7 +15838,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -16331,7 +15923,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -16348,7 +15940,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-10"
@@ -16501,7 +16093,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-11",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -16518,7 +16110,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -16739,7 +16331,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-11",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -16756,7 +16348,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-11",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -16994,7 +16586,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -17079,7 +16671,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -17198,7 +16790,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -17283,7 +16875,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-06-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -17385,7 +16977,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-11",
-    "last_seen": "2026-07-31",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-11"
@@ -17487,7 +17079,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17504,7 +17096,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-07-28",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17589,7 +17181,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-12",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17657,7 +17249,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17674,7 +17266,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17725,7 +17317,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17742,7 +17334,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17793,7 +17385,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-12",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-12"
@@ -17844,7 +17436,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-11",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-13"
@@ -17861,7 +17453,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-13"
@@ -17929,7 +17521,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-13"
@@ -17946,7 +17538,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-27",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-14"
@@ -17980,7 +17572,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-14"
@@ -18065,7 +17657,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-14"
@@ -18099,7 +17691,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-14"
@@ -18133,7 +17725,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18150,7 +17742,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18184,7 +17776,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18252,7 +17844,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18269,7 +17861,7 @@
     "drive_hours": 1.0,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18371,7 +17963,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18422,7 +18014,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18439,7 +18031,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-15"
@@ -18456,7 +18048,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18473,7 +18065,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18490,7 +18082,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18507,7 +18099,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18524,7 +18116,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-07-30",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18558,7 +18150,7 @@
     "drive_hours": 1.3,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18575,7 +18167,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18592,7 +18184,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-07-31",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18609,7 +18201,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18626,7 +18218,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18660,7 +18252,7 @@
     "drive_hours": 1.7,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18677,7 +18269,7 @@
     "drive_hours": 2.0,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18694,7 +18286,7 @@
     "drive_hours": 3.3,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18728,7 +18320,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18745,7 +18337,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-16"
@@ -18796,7 +18388,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -18813,7 +18405,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -18864,7 +18456,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -18915,7 +18507,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -18932,7 +18524,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -18966,7 +18558,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -19051,7 +18643,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -19068,7 +18660,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -19085,7 +18677,7 @@
     "drive_hours": 4.3,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -19102,7 +18694,7 @@
     "drive_hours": 4.6,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-17"
@@ -19221,7 +18813,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19272,7 +18864,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19408,7 +19000,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19425,7 +19017,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19459,7 +19051,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19476,7 +19068,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19493,7 +19085,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19510,7 +19102,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19544,7 +19136,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-07-13",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19578,7 +19170,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-18"
@@ -19595,7 +19187,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19629,7 +19221,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19680,7 +19272,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19731,7 +19323,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19748,7 +19340,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19765,7 +19357,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19799,7 +19391,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19816,7 +19408,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19850,7 +19442,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-19"
@@ -19867,7 +19459,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-20",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -19918,7 +19510,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -19935,7 +19527,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-20",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -19952,7 +19544,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-20",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -19969,7 +19561,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-07-21",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20003,7 +19595,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-21",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20037,7 +19629,7 @@
     "drive_hours": 1.7,
     "sponsorship": "unknown",
     "posted": "2026-07-13",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20054,7 +19646,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20071,7 +19663,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20088,7 +19680,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-09",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20105,7 +19697,7 @@
     "drive_hours": 2.0,
     "sponsorship": "unknown",
     "posted": "2026-07-20",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20122,7 +19714,7 @@
     "drive_hours": 2.0,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20139,7 +19731,7 @@
     "drive_hours": 2.0,
     "sponsorship": "unknown",
     "posted": "2026-07-20",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-20"
@@ -20224,7 +19816,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20258,7 +19850,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20275,7 +19867,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20326,7 +19918,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20343,7 +19935,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20360,7 +19952,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20394,7 +19986,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20411,7 +20003,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20428,7 +20020,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20496,7 +20088,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-21",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20598,7 +20190,7 @@
     "drive_hours": 3.5,
     "sponsorship": "unknown",
     "posted": "2026-06-28",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20615,7 +20207,7 @@
     "drive_hours": 4.1,
     "sponsorship": "unknown",
     "posted": "2026-07-07",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-21"
@@ -20649,7 +20241,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20666,7 +20258,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20683,7 +20275,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20700,7 +20292,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20717,7 +20309,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20751,7 +20343,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20785,7 +20377,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-05",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20836,7 +20428,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-07-28",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20853,7 +20445,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20887,7 +20479,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20921,7 +20513,7 @@
     "drive_hours": 1.6,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -20972,7 +20564,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -21023,7 +20615,7 @@
     "drive_hours": 4.6,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-22"
@@ -21040,7 +20632,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21057,7 +20649,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21074,7 +20666,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21108,7 +20700,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-06",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21142,7 +20734,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21159,7 +20751,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21227,7 +20819,7 @@
     "drive_hours": 3.5,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-23"
@@ -21244,7 +20836,7 @@
     "drive_hours": 0.5,
     "sponsorship": "likely",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21499,7 +21091,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21550,7 +21142,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21601,7 +21193,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21635,7 +21227,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21805,7 +21397,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21907,7 +21499,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21958,7 +21550,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-23",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21975,7 +21567,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -21992,7 +21584,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -22009,7 +21601,7 @@
     "drive_hours": 2.2,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -22043,7 +21635,7 @@
     "drive_hours": 2.2,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -22077,7 +21669,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -22128,7 +21720,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -22145,7 +21737,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-07-27",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-24"
@@ -22298,7 +21890,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22315,7 +21907,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-06-27",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22349,7 +21941,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22366,7 +21958,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-18",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22400,7 +21992,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22451,7 +22043,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22536,7 +22128,7 @@
     "drive_hours": 2.2,
     "sponsorship": "unknown",
     "posted": "2026-07-08",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22570,7 +22162,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22587,7 +22179,7 @@
     "drive_hours": 4.0,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22604,7 +22196,7 @@
     "drive_hours": 4.1,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-25"
@@ -22638,7 +22230,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22655,7 +22247,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-10",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22672,7 +22264,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22689,7 +22281,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22757,7 +22349,7 @@
     "drive_hours": 0.9,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22774,7 +22366,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-07-31",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22808,7 +22400,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-07-31",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22842,7 +22434,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22893,7 +22485,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-26"
@@ -22910,7 +22502,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -22927,7 +22519,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-27",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -22961,7 +22553,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -22978,7 +22570,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -22995,7 +22587,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-16",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -23012,7 +22604,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-24",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -23080,7 +22672,7 @@
     "drive_hours": 3.9,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-27"
@@ -23097,7 +22689,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-28"
@@ -23114,7 +22706,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-15",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-28"
@@ -23131,7 +22723,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-28"
@@ -23148,7 +22740,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-28"
@@ -23165,7 +22757,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-28",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-28"
@@ -23233,7 +22825,7 @@
     "drive_hours": 3.6,
     "sponsorship": "unknown",
     "posted": "2026-07-26",
-    "last_seen": "2026-07-30",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-28"
@@ -23250,7 +22842,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23267,7 +22859,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23318,7 +22910,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23335,7 +22927,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23352,7 +22944,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23386,7 +22978,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23403,7 +22995,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23420,7 +23012,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23437,7 +23029,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23471,7 +23063,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23488,7 +23080,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23505,7 +23097,7 @@
     "drive_hours": 4.1,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23522,7 +23114,7 @@
     "drive_hours": 4.1,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-29"
@@ -23573,7 +23165,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-29",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23590,7 +23182,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23607,7 +23199,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23624,7 +23216,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23641,7 +23233,7 @@
     "drive_hours": 1.1,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23658,7 +23250,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23675,7 +23267,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23692,7 +23284,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23743,7 +23335,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-07-31",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23760,7 +23352,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23794,7 +23386,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23811,7 +23403,7 @@
     "drive_hours": 4.6,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-30"
@@ -23828,7 +23420,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-23",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23845,7 +23437,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-06-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23862,7 +23454,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23896,7 +23488,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23913,7 +23505,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23930,7 +23522,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-07-17",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23947,7 +23539,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23964,7 +23556,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -23981,7 +23573,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24032,7 +23624,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24066,7 +23658,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-25",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24100,7 +23692,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24134,7 +23726,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24151,7 +23743,7 @@
     "drive_hours": 1.9,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24185,7 +23777,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-07-31"
@@ -24219,7 +23811,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24236,7 +23828,7 @@
     "drive_hours": 0.1,
     "sponsorship": "unknown",
     "posted": "2026-07-22",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24253,7 +23845,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24270,7 +23862,7 @@
     "drive_hours": 0.3,
     "sponsorship": "unknown",
     "posted": "2026-08-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24287,7 +23879,7 @@
     "drive_hours": 0.4,
     "sponsorship": "unknown",
     "posted": "2026-07-31",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24304,7 +23896,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-14",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24321,7 +23913,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-07-27",
-    "last_seen": "2026-08-01",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24338,7 +23930,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24355,7 +23947,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24423,7 +24015,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24474,7 +24066,7 @@
     "drive_hours": 1.2,
     "sponsorship": "unknown",
     "posted": "2026-08-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24508,7 +24100,7 @@
     "drive_hours": 1.5,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24542,7 +24134,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-28",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24559,7 +24151,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24593,7 +24185,7 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-08-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24627,7 +24219,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-07-30",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24644,7 +24236,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24661,7 +24253,7 @@
     "drive_hours": 3.7,
     "sponsorship": "unknown",
     "posted": "2026-08-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24678,7 +24270,7 @@
     "drive_hours": 4.3,
     "sponsorship": "unknown",
     "posted": "2026-08-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-01"
@@ -24695,7 +24287,7 @@
     "drive_hours": 3.7,
     "sponsorship": "likely",
     "posted": "2026-07-19",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24712,7 +24304,7 @@
     "drive_hours": 0.2,
     "sponsorship": "unknown",
     "posted": "2026-08-02",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24729,7 +24321,7 @@
     "drive_hours": 0.5,
     "sponsorship": "unknown",
     "posted": "2026-08-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24763,7 +24355,7 @@
     "drive_hours": 0.6,
     "sponsorship": "unknown",
     "posted": "2026-07-28",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24780,7 +24372,7 @@
     "drive_hours": 0.7,
     "sponsorship": "unknown",
     "posted": "2026-08-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24797,7 +24389,7 @@
     "drive_hours": 0.8,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24814,7 +24406,7 @@
     "drive_hours": 1.0,
     "sponsorship": "unknown",
     "posted": "2026-08-03",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
@@ -24831,9 +24423,111 @@
     "drive_hours": 1.8,
     "sponsorship": "unknown",
     "posted": "2026-08-01",
-    "last_seen": "2026-08-02",
+    "last_seen": "2026-08-03",
     "profile_id": "sydney",
     "profile_label": "Sydney · Schofields",
     "date_added": "2026-08-02"
+  },
+  "sydney|adzuna:5826337314": {
+    "uid": "adzuna:5826337314",
+    "source": "Adzuna (AU)",
+    "title": "ECT - Preschool Lead Berorwa",
+    "company": "Save Our Service Casual Recruitment Agency",
+    "location": "Cowan, Hornsby Area",
+    "url": "https://www.adzuna.com.au/details/5826337314?utm_medium=api&utm_source=42100c80",
+    "description": "Early Childhood Teacher – Preschool Lead | Berowra Save Our Service is proud to be partnering with a well-established, privately owned Early Learning Centre in Berowra to recruit an experienced and passionate Early Childhood Teacher to lead their Preschool Room. This is an exciti",
+    "distance_km": 28.5,
+    "drive_hours": 0.4,
+    "sponsorship": "unknown",
+    "posted": "2026-08-03",
+    "last_seen": "2026-08-03",
+    "profile_id": "sydney",
+    "profile_label": "Sydney · Schofields",
+    "date_added": "2026-08-03"
+  },
+  "sydney|adzuna:5822654335": {
+    "uid": "adzuna:5822654335",
+    "source": "Adzuna (AU)",
+    "title": "Centre Director | Travel Assistance to Bomaderry",
+    "company": "Little Zak's Academy",
+    "location": "Mangerton, Wollongong Area",
+    "url": "https://www.adzuna.com.au/details/5822654335?utm_medium=api&utm_source=42100c80",
+    "description": "Little Zak's Academy is privately owned and family run. Our aim is to provide early childhood care and education in a safe, welcoming, adopting and nurturing environment. Our staff are dedicated professionals who value the importance of maintaining an optimum level of care and ed",
+    "distance_km": 80.3,
+    "drive_hours": 1.2,
+    "sponsorship": "unknown",
+    "posted": "2026-08-01",
+    "last_seen": "2026-08-03",
+    "profile_id": "sydney",
+    "profile_label": "Sydney · Schofields",
+    "date_added": "2026-08-03"
+  },
+  "sydney|adzuna:5824627455": {
+    "uid": "adzuna:5824627455",
+    "source": "Adzuna (AU)",
+    "title": "Certificate III Educator | Stanwell Park Early Learning",
+    "company": "Big Fat Smile",
+    "location": "Mangerton, Wollongong Area",
+    "url": "https://www.adzuna.com.au/details/5824627455?utm_medium=api&utm_source=42100c80",
+    "description": "Permanent, part-time 15.2 hours per week Thursday & Friday @ 7.6 hours per day Working at Big Fat Smile, there’s a lot to smile about. The trust you’ll be given in exchange for your expertise. The freedom you’ll be given to use your judgement, adapt learning approaches, and bring",
+    "distance_km": 80.3,
+    "drive_hours": 1.2,
+    "sponsorship": "unknown",
+    "posted": "2026-08-02",
+    "last_seen": "2026-08-03",
+    "profile_id": "sydney",
+    "profile_label": "Sydney · Schofields",
+    "date_added": "2026-08-03"
+  },
+  "sydney|adzuna:5826079766": {
+    "uid": "adzuna:5826079766",
+    "source": "Adzuna (AU)",
+    "title": "Early Childhood Educator (Diploma)",
+    "company": "Bega Valley Shire Council",
+    "location": "Mangerton, Wollongong Area",
+    "url": "https://www.adzuna.com.au/details/5826079766?utm_medium=api&utm_source=42100c80",
+    "description": "A career with Bega Valley Shire Council offers the opportunity to engage in meaningful and diverse work that supports the vibrant communities of the south-east corner of NSW. Nestled between rolling hills and some of the state’s most stunning beaches, this region is home to a var",
+    "distance_km": 80.3,
+    "drive_hours": 1.2,
+    "sponsorship": "unknown",
+    "posted": "2026-08-03",
+    "last_seen": "2026-08-03",
+    "profile_id": "sydney",
+    "profile_label": "Sydney · Schofields",
+    "date_added": "2026-08-03"
+  },
+  "sydney|adzuna:5826080582": {
+    "uid": "adzuna:5826080582",
+    "source": "Adzuna (AU)",
+    "title": "Educators & Room Leaders",
+    "company": "The ELO Group",
+    "location": "East Bowral, Bowral Area",
+    "url": "https://www.adzuna.com.au/details/5826080582?utm_medium=api&utm_source=42100c80",
+    "description": "About the role The Early Learning Hub (part of the Early Learners Of (ELO) Group) is seeking a talented qualified Educators and Room Leaders to join our dedicated team in Warragamba . As a full-time Educator, you will play a pivotal role in providing high-quality educational expe",
+    "distance_km": 97.1,
+    "drive_hours": 1.5,
+    "sponsorship": "unknown",
+    "posted": "2026-08-03",
+    "last_seen": "2026-08-03",
+    "profile_id": "sydney",
+    "profile_label": "Sydney · Schofields",
+    "date_added": "2026-08-03"
+  },
+  "sydney|adzuna:5826581585": {
+    "uid": "adzuna:5826581585",
+    "source": "Adzuna (AU)",
+    "title": "Wellington ECE Relief Teachers",
+    "company": "anzuk education services pty ltd",
+    "location": "Wellington, Wellington Area",
+    "url": "https://www.adzuna.com.au/details/5826581585?utm_medium=api&utm_source=42100c80",
+    "description": "About the Role As an early childhood relief teacher, you will support centres across Wellington with short-term and day-to-day cover. You’ll work alongside experienced teams to create safe, engaging, and nurturing environments, supporting tamariki through play-based learning. Wha",
+    "distance_km": 220.7,
+    "drive_hours": 3.4,
+    "sponsorship": "unknown",
+    "posted": "2026-08-03",
+    "last_seen": "2026-08-03",
+    "profile_id": "sydney",
+    "profile_label": "Sydney · Schofields",
+    "date_added": "2026-08-03"
   }
 }
